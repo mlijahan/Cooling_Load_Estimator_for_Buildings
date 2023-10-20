@@ -2,20 +2,16 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 import numpy as np
 
-
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(1000, 480)
         Dialog.setMinimumSize(QtCore.QSize(1000, 480))
         Dialog.setMaximumSize(QtCore.QSize(1000, 480))
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        Dialog.setWindowIcon(icon)
         self.tableWidget = QtWidgets.QTableWidget(parent=Dialog)
         self.tableWidget.setGeometry(QtCore.QRect(130, 90, 741, 281))
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(8)
+        self.tableWidget.setColumnCount(7)
         self.tableWidget.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, item)
@@ -31,8 +27,6 @@ class Ui_Dialog(object):
         self.tableWidget.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(7, item)
         self.tableWidget.horizontalHeader().setDefaultSectionSize(280)
         self.line = QtWidgets.QFrame(parent=Dialog)
         self.line.setGeometry(QtCore.QRect(0, 70, 1001, 16))
@@ -84,7 +78,7 @@ class Ui_Dialog(object):
         self.line_3.setFrameShadow(QtWidgets.QFrame.Shadow.Sunken)
         self.line_3.setObjectName("line_3")
         self.label_2 = QtWidgets.QLabel(parent=Dialog)
-        self.label_2.setGeometry(QtCore.QRect(120, 415, 151, 16))
+        self.label_2.setGeometry(QtCore.QRect(40, 415, 231, 20))
         font = QtGui.QFont()
         font.setBold(True)
         self.label_2.setFont(font)
@@ -94,33 +88,29 @@ class Ui_Dialog(object):
         self.pushButton_5.setObjectName("pushButton_5")
         self.lineEdit_2 = QtWidgets.QLineEdit(parent=Dialog)
         self.lineEdit_2.setGeometry(QtCore.QRect(280, 410, 111, 31))
-        self.lineEdit_2.setReadOnly(True)
         self.lineEdit_2.setObjectName("lineEdit_2")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
-    def total_u_factor_per_envelope(self):
-        self.total_conductive_load = []
+    def Transparent_surface_cooling_load(self):
+        self.total_transparent_load = []
         self.ROW = self.tableWidget.rowCount()
         for row in range(self.ROW):
-            self.envelope_u = float(self.tableWidget.item(row, 5).text())
-            self.dt = float(self.tableWidget.item(row, 2).text())
-            self.fenestration_u = float(self.tableWidget.item(row, 6).text())
-            self.envelpe_load = self.envelope_u * self.dt
-            self.fenestration_load = self.fenestration_u * self.dt
-            self.total_conductive_load_envelope = self.envelpe_load + self.fenestration_load
-            self.total_conductive_load.append(self.total_conductive_load_envelope)
-        self.total_conductive_all_envelopes = sum(self.total_conductive_load )
-        return np.round(self.total_conductive_all_envelopes,2)
+            self.total_transparent_load.append(float(self.tableWidget.item(row, 5).text()))
+        self.total_transparentload_envelopes = sum(self.total_transparent_load)
+        return np.round(self.total_transparentload_envelopes,2)
 
-    def miscellaneous_loads(self):
-        self.heat_loss = []
+    def opaque_surface_loads(self):
+        self.opaque = []
         self.ROW = self.tableWidget.rowCount()
         for row in range(self.ROW):
-            self.heat_loss.append(float(self.tableWidget.item(row, 7).text()))
-        self.total_heat_losses = sum(self.heat_loss)
-        return np.round(self.total_heat_losses)
+            self.opaque.append(float(self.tableWidget.item(row, 6).text()))
+        self.total_opaque_loads = sum(self.opaque)
+        return np.round(self.total_opaque_loads)
+
+    def totalheat(self):
+        return (self.opaque_surface_loads() + self.Transparent_surface_cooling_load())
 
     def delete_row_layers(self):
         self.ROW = self.tableWidget.rowCount()
@@ -131,7 +121,7 @@ class Ui_Dialog(object):
         self.zone_name_delete = self.lineEdit.clear()
         return self.zone_name_delete
 
-    def delete_total_conductive_load(self):
+    def delete_total_heatgain_through_envelopes(self):
         self.coductive_load = self.lineEdit_2.clear()
         return self.coductive_load
 
@@ -149,26 +139,17 @@ class Ui_Dialog(object):
         item = self.tableWidget.horizontalHeaderItem(4)
         item.setText(_translate("Dialog", "Total Fenestration Area (m2)"))
         item = self.tableWidget.horizontalHeaderItem(5)
-        item.setText(_translate("Dialog", "total Envelope U factor (W/m2K) * A (m2)"))
+        item.setText(_translate("Dialog", "Transparent surface cooling load (W)"))
         item = self.tableWidget.horizontalHeaderItem(6)
-        item.setText(_translate("Dialog", "total Fenestration U factor (W/m2K) * A (m2)"))
-        item = self.tableWidget.horizontalHeaderItem(7)
-        item.setText(_translate("Dialog", "Total Heat Loss Coefficient (W/m2K) * A (m2)"))
+        item.setText(_translate("Dialog", "Opaque surface cooling load (W)"))
         self.label.setText(_translate("Dialog", "Zone Name :"))
         self.pushButton.setText(_translate("Dialog", "Clear"))
         self.pushButton_2.setText(_translate("Dialog", "Save"))
         self.pushButton_3.setText(_translate("Dialog", "Add New Envelope"))
         self.label_3.setText(_translate("Dialog", "Select Envelope :"))
         self.pushButton_6.setText(_translate("Dialog", "Add to List"))
-        self.label_2.setText(_translate("Dialog", "Total Conductive Load (w) :"))
+        self.label_2.setText(_translate("Dialog", "Total Heat Gain Through Envelope (w) :"))
         self.pushButton_5.setText(_translate("Dialog", "Calculation"))
 
 
-# if __name__ == "__main__":
-#     import sys
-#     app = QtWidgets.QApplication(sys.argv)
-#     Dialog = QtWidgets.QDialog()
-#     ui = Ui_Dialog()
-#     ui.setupUi(Dialog)
-#     Dialog.show()
-#     sys.exit(app.exec())
+

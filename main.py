@@ -35,7 +35,10 @@ import door01 as d1
 import door02 as d2
 import door03 as d3
 import door04 as d4
-
+import cf_ceiling as ceiling
+import cf_wall as wall
+import cf_floor as floor
+import cf_slab as slab
 
 
 #Create a database or connect  to one
@@ -1037,17 +1040,17 @@ class Ui_rfr(object):
         self.total_heat = new_zone.lineEdit_16.setText(str(new_zone.total_heatingload()))
         return self.total_heat
 
-    def show_zone_total_conductive_load(self):
-        self.zone_conductive_load = new_zone.lineEdit_10.setText(str(envelope.total_u_factor_per_envelope()))
-        return self.zone_conductive_load
+    def show_zone_total_heatgain(self):
+        self.zone_heatgain_load = new_zone.lineEdit_10.setText(str(envelope.Transparent_surface_cooling_load()))
+        return self.zone_heatgain_load
 
     def zone_name(self):
         self.zonname = envelope.lineEdit.setText(str(new_zone.zone_names()))
         return self.zonname
 
-    def total_conductive_load(self):
-        self.conductive_load_show = envelope.lineEdit_2.setText(str(envelope.total_u_factor_per_envelope()))
-        return self.conductive_load_show
+    def total_heatgain_through_envelope(self):
+        self.heatgain_envelope_show = envelope.lineEdit_2.setText(str(envelope.totalheat()))
+        return self.heatgain_envelope_show
 
     def envelope_envelopes_name(self):
         self.envelopesname = add_layers.lineEdit.setText(str(add_envelopes.envelopes_name()))
@@ -1057,14 +1060,6 @@ class Ui_rfr(object):
         self.envelopesname = fenestrations.lineEdit.setText(str(add_envelopes.envelopes_name()))
         return self.envelopesname
 
-    def heat_loss_floor(self):
-        self.heatloss_floor = add_envelopes.lineEdit_6.setText(str(het_loss_floor.heat_loss_load()))
-        return self.heatloss_floor
-
-    def heat_loss_wall(self):
-        self.heatloss_wall = add_envelopes.lineEdit_6.setText(str(het_loss_wall.heat_loss_load()))
-        self.heatloss_wall = new_zone.lineEdit_14.setText(str(het_loss_wall.heat_loss_load()))
-        return self.heatloss_wall
 
     def insulation_R_factor(self):
         self.insulation_type = add_insulation.comboBox.currentIndex()
@@ -1193,16 +1188,6 @@ class Ui_rfr(object):
         else:
             pass
 
-    def select_heat_loss(self):
-        self.heatloss = add_envelopes.comboBox.currentIndex()
-        if self.heatloss == 0:
-            dialog_het_loss_wall.exec()
-        elif self.heatloss == 1:
-            dialog_het_loss_floor.exec()
-        else:
-            dialog_no_het_loss.exec()
-            add_envelopes.lineEdit_6.setText(str(0))
-
     def select_insulation(self):
         self.insulation = add_insulation.comboBox.currentIndex()
         if self.insulation == 0:
@@ -1267,6 +1252,60 @@ class Ui_rfr(object):
     def door_4_ins_u_factor(self):
         self.doors_4_instal_u_fact = fenestration_area.lineEdit_5.setText(str(0))
         return self.doors_4_instal_u_fact
+
+    def select_opaque_surface(self):
+        self.opaque_surface = add_envelopes.comboBox.currentIndex()
+        if self.opaque_surface == 0:
+            dialog_wallcf.exec()
+        elif self.opaque_surface == 1:
+            dialog_floorcf.exec()
+        elif self.opaque_surface == 2:
+            dialog_ceilingcf.exec()
+        else:
+            dialog_slabcf.exec()
+
+    def total_cf_factor_walls(self):
+        self.total_value_cf = wall_cf.ofr_reducing_temp_effect() + wall_cf.oft_buffering_effect()\
+                              + wall_cf.ofb_incident_solargain()
+
+        self.total_ua_wall = float(add_envelopes.lineEdit_5.text()) + float (add_envelopes.lineEdit_4.text())
+        self.total_cf_ua = self.total_value_cf * self.total_ua_wall
+        return self.total_cf_ua
+
+    def show_total_cffactors_walls(self):
+        self.show_cffactor = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_walls()))
+        return self.show_cffactor
+
+    def total_cf_factor_floors(self):
+        self.total_value_cf_floor = floor_cf.ofr_reducing_temp_effect_floor() + floor_cf.oft_buffering_effect_floor()
+        self.total_ua_floor = float(add_envelopes.lineEdit_5.text()) + float(add_envelopes.lineEdit_4.text())
+        self.total_cf_ua_floor = self.total_value_cf_floor * self.total_ua_floor
+        return self.total_cf_ua_floor
+
+    def show_total_cffactors_floors(self):
+        self.show_cffactor_floor = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_floors()))
+        return self.show_cffactor_floor
+
+    def total_cf_factor_ceilings(self):
+        self.total_value_cf_ceiling = ceiling_cf.ofr_reducing_temp_effect_ceiling() + \
+                                      ceiling_cf.oft_buffering_effect_ceiling()+\
+                                      ceiling_cf.ofb_incident_solargain_ceiling()
+        self.total_ua_ceiling = float(add_envelopes.lineEdit_5.text()) + float(add_envelopes.lineEdit_4.text())
+        self.total_cf_ua_ceiling = self.total_value_cf_ceiling * self.total_ua_ceiling
+        return self.total_cf_ua_ceiling
+
+    def show_total_cffactors_ceilings(self):
+        self.show_cffactor_ceiling = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_ceilings()))
+        return self.show_cffactor_ceiling
+
+    def total_cf_factor_slabs(self):
+        self.total_value_cf_slab = slab_cf.opaque_load_slab()
+        self.total_ua_slab = float(add_envelopes.lineEdit_7.text())
+        self.total_cf_ua_slab = self.total_value_cf_ceiling * self.total_ua_ceiling
+        return self.total_cf_ua_slab
+
+    def show_total_cffactors_slabs(self):
+        self.show_cffactor_slab = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_slabs()))
 
     def exportToExcel(self):
         zone_names = []
@@ -1377,14 +1416,13 @@ if __name__ == "__main__":
     add_envelopes.setupUi(dialog_addenvelopes)
     envelope.pushButton_3.clicked.connect(lambda: dialog_addenvelopes.exec())
     envelope.pushButton_6.clicked.connect(lambda: ui.grab_envelope())
-    envelope.pushButton_5.clicked.connect(lambda: ui.total_conductive_load())
-    envelope.pushButton_5.clicked.connect(lambda: ui.show_zone_total_conductive_load())
+    envelope.pushButton_5.clicked.connect(lambda: ui.total_heatgain_through_envelope())
     envelope.pushButton.clicked.connect(lambda: envelope.tableWidget.clearContents())
     envelope.pushButton.clicked.connect(lambda: envelope.delete_row_layers())
     envelope.pushButton.clicked.connect(lambda: envelope.delete_zone_name_from())
-    envelope.pushButton.clicked.connect(lambda: envelope.delete_total_conductive_load())
+    envelope.pushButton.clicked.connect(lambda: envelope.delete_total_heatgain_through_envelopes())
     envelope.pushButton.clicked.connect(lambda: add_envelopes.clear_data_dt())
-    envelope.pushButton_2.clicked.connect(lambda: ui.show_zone_total_conductive_load())
+    envelope.pushButton_2.clicked.connect(lambda: ui.show_zone_total_heatgain())
     ##================================================================= Add Envelopes Properties Form
     add_envelopes_properties = adevpr.Ui_Dialog()
     dialog_add_envelopes_properties = QtWidgets.QDialog()
@@ -1409,6 +1447,7 @@ if __name__ == "__main__":
     fenestrations.pushButton_6.clicked.connect(lambda: fenestrations.delete_row_fenestration())
     fenestrations.pushButton_6.clicked.connect(lambda: fenestrations.delete_envelope_name())
     fenestrations.pushButton_6.clicked.connect(lambda: fenestrations.delete_total_u())
+    add_envelopes.pushButton_3.clicked.connect(lambda: ui.select_opaque_surface())
     fenestrations.pushButton.clicked.connect(lambda: ui.save_fenestration_u_factor())
     ##================================================================= Add Fenestration Area Form
     fenestration_area = fnstar.Ui_Dialog()
@@ -1453,27 +1492,6 @@ if __name__ == "__main__":
     add_air.pushButton.clicked.connect(lambda: add_air.reset_air_apace_thickness())
     add_air.pushButton.clicked.connect(lambda: add_air.reset_effective_emittance())
     add_air.pushButton.clicked.connect(lambda: add_air.reset_air_position())
-    ###========================================================== Heat Loss Bellow Grade in Basement Wall
-    het_loss_wall = losswall.Ui_Dialog()
-    dialog_het_loss_wall = QtWidgets.QDialog()
-    het_loss_wall.setupUi(dialog_het_loss_wall)
-    add_envelopes.pushButton_3.clicked.connect(lambda: ui.select_heat_loss())
-    het_loss_wall.pushButton_2.clicked.connect(lambda: ui.heat_loss_wall())
-    het_loss_wall.pushButton.clicked.connect(lambda: het_loss_wall.heat_loss_delete())
-    het_loss_wall.pushButton.clicked.connect(lambda: het_loss_wall.reset_depth_through_soil())
-    het_loss_wall.pushButton.clicked.connect(lambda: het_loss_wall.reset_r_wall())
-    ###========================================================== Heat Loss Through Basement Floors
-    het_loss_floor = lossfloor.Ui_Dialog()
-    dialog_het_loss_floor = QtWidgets.QDialog()
-    het_loss_floor.setupUi(dialog_het_loss_floor)
-    het_loss_floor.pushButton_2.clicked.connect(lambda: ui.heat_loss_floor())
-    het_loss_floor.pushButton.clicked.connect(lambda: het_loss_floor.heat_loss_delete())
-    het_loss_floor.pushButton.clicked.connect(lambda: het_loss_floor.reset_depth_fundation())
-    het_loss_floor.pushButton.clicked.connect(lambda: het_loss_floor.reset_shortest_width())
-    ###========================================================== No Heat Loss Through Basement
-    no_het_loss = nol.Ui_Dialog()
-    dialog_no_het_loss = QtWidgets.QDialog()
-    no_het_loss.setupUi(dialog_no_het_loss)
     ##====================================================================== Add New Layer of Envelopes
     add_layers = ly.Ui_Dialog()
     dialog_addlayers = QtWidgets.QDialog()
@@ -1613,6 +1631,33 @@ if __name__ == "__main__":
     door04.pushButton_10.clicked.connect(lambda: dialog_door.close())
     door04.pushButton_10.clicked.connect(lambda: dialog_windowdoors.close())
     door04.pushButton_9.clicked.connect(lambda: door04.reset_door4_u())
+    ##======================================================================Wall opaque factor calculation
+    wall_cf = wall.Ui_Dialog()
+    dialog_wallcf = QtWidgets.QDialog()
+    wall_cf.setupUi(dialog_wallcf)
+    wall_cf.pushButton_2.clicked.connect(lambda: ui.show_total_cffactors_walls())
+    wall_cf.pushButton.clicked.connect(lambda: wall_cf.reset_cf_wall())
+    wall_cf.pushButton.clicked.connect(lambda: wall_cf.reset_cf_wall_dt())
+    ##======================================================================Floor opaque factor calculation
+    floor_cf = floor.Ui_Dialog()
+    dialog_floorcf = QtWidgets.QDialog()
+    floor_cf.setupUi(dialog_floorcf)
+    floor_cf.pushButton_2.clicked.connect(lambda: ui.show_total_cffactors_floors())
+    floor_cf.pushButton.clicked.connect(lambda: floor_cf.reset_cf_floor())
+    floor_cf.pushButton.clicked.connect(lambda: floor_cf.reset_cf_floor_dt())
+    ##======================================================================Ceiling opaque factor calculation
+    ceiling_cf = ceiling.Ui_Dialog()
+    dialog_ceilingcf = QtWidgets.QDialog()
+    ceiling_cf.setupUi(dialog_ceilingcf)
+    ceiling_cf.pushButton_2.clicked.connect(lambda: ui.show_total_cffactors_ceilings())
+    ceiling_cf.pushButton.clicked.connect(lambda: ceiling_cf.reset_cf_ceiling())
+    ceiling_cf.pushButton.clicked.connect(lambda: ceiling_cf.reset_cf_ceiling_dt())
+    ##======================================================================Slab opaque factor calculation
+    slab_cf = slab.Ui_Dialog()
+    dialog_slabcf = QtWidgets.QDialog()
+    ceiling_cf.setupUi(dialog_slabcf)
+    slab_cf.pushButton_2.clicked.connect(lambda: ui.show_total_cffactors_slabs())
+    slab_cf.pushButton.clicked.connect(lambda: slab_cf.reset_cf_slab())
     ###===================================================================================================
 
     sys.exit(app.exec())

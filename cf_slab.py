@@ -1,75 +1,50 @@
 
+
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(600, 640)
-        Dialog.setMinimumSize(QtCore.QSize(600, 640))
-        Dialog.setMaximumSize(QtCore.QSize(600, 640))
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        Dialog.setWindowIcon(icon)
-        self.verticalLayoutWidget = QtWidgets.QWidget(parent=Dialog)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(19, 10, 320, 521))
-        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.label_2 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
+        Dialog.resize(650, 260)
+        Dialog.setMinimumSize(QtCore.QSize(650, 260))
+        Dialog.setMaximumSize(QtCore.QSize(650, 260))
+        self.formLayoutWidget = QtWidgets.QWidget(parent=Dialog)
+        self.formLayoutWidget.setGeometry(QtCore.QRect(40, 50, 594, 86))
+        self.formLayoutWidget.setObjectName("formLayoutWidget")
+        self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.formLayout.setObjectName("formLayout")
+        self.label = QtWidgets.QLabel(parent=self.formLayoutWidget)
         font = QtGui.QFont()
-        font.setBold(True)
-        self.label_2.setFont(font)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.label_2)
-        self.label = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
+        font.setPointSize(9)
         font.setBold(True)
         self.label.setFont(font)
         self.label.setObjectName("label")
-        self.verticalLayout.addWidget(self.label)
-        self.label_5 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.label_5.setFont(font)
-        self.label_5.setObjectName("label_5")
-        self.verticalLayout.addWidget(self.label_5)
-        self.label_3 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.label_3.setFont(font)
-        self.label_3.setObjectName("label_3")
-        self.verticalLayout.addWidget(self.label_3)
-        self.label_6 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.label_6.setFont(font)
-        self.label_6.setObjectName("label_6")
-        self.verticalLayout.addWidget(self.label_6)
-        self.label_9 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.label_9.setFont(font)
-        self.label_9.setObjectName("label_9")
-        self.verticalLayout.addWidget(self.label_9)
-        self.label_4 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.label_4.setFont(font)
-        self.label_4.setObjectName("label_4")
-        self.verticalLayout.addWidget(self.label_4)
-        self.label_10 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
-        font = QtGui.QFont()
-        font.setBold(True)
-        self.label_10.setFont(font)
-        self.label_10.setObjectName("label_10")
-        self.verticalLayout.addWidget(self.label_10)
-        self.lineEdit = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit.setGeometry(QtCore.QRect(310, 32, 113, 24))
-        self.lineEdit.setObjectName("lineEdit")
-        self.pushButton_9 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_9.setGeometry(QtCore.QRect(110, 570, 121, 41))
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.LabelRole, self.label)
+        self.comboBox = QtWidgets.QComboBox(parent=self.formLayoutWidget)
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.FieldRole, self.comboBox)
+        self.pushButton = QtWidgets.QPushButton(parent=Dialog)
+        self.pushButton.setGeometry(QtCore.QRect(90, 190, 121, 41))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
@@ -215,15 +190,13 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(120, 26, 8, 127))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        self.pushButton_9.setPalette(palette)
+        self.pushButton.setPalette(palette)
         font = QtGui.QFont()
-        font.setPointSize(10)
         font.setBold(True)
-        self.pushButton_9.setFont(font)
-        self.pushButton_9.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.pushButton_9.setObjectName("pushButton_9")
-        self.pushButton_10 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_10.setGeometry(QtCore.QRect(380, 570, 121, 41))
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(parent=Dialog)
+        self.pushButton_2.setGeometry(QtCore.QRect(440, 190, 121, 41))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
@@ -369,157 +342,89 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(58, 99, 58, 127))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        self.pushButton_10.setPalette(palette)
+        self.pushButton_2.setPalette(palette)
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(9)
         font.setBold(True)
-        self.pushButton_10.setFont(font)
-        self.pushButton_10.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.pushButton_10.setObjectName("pushButton_10")
-        self.pushButton_3 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_3.setGeometry(QtCore.QRect(310, 491, 111, 24))
-        self.pushButton_3.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_5 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_5.setGeometry(QtCore.QRect(310, 358, 111, 24))
-        self.pushButton_5.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_7 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_7.setGeometry(QtCore.QRect(310, 423, 111, 24))
-        self.pushButton_7.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.lineEdit_3 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_3.setGeometry(QtCore.QRect(310, 293, 113, 24))
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.lineEdit_4 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_4.setGeometry(QtCore.QRect(463, 358, 113, 24))
-        self.lineEdit_4.setReadOnly(True)
-        self.lineEdit_4.setObjectName("lineEdit_4")
-        self.lineEdit_5 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_5.setGeometry(QtCore.QRect(463, 423, 113, 24))
-        self.lineEdit_5.setReadOnly(True)
-        self.lineEdit_5.setObjectName("lineEdit_5")
-        self.lineEdit_6 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_6.setGeometry(QtCore.QRect(463, 491, 113, 24))
-        self.lineEdit_6.setReadOnly(True)
-        self.lineEdit_6.setObjectName("lineEdit_6")
-        self.lineEdit_7 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_7.setGeometry(QtCore.QRect(310, 228, 113, 24))
-        self.lineEdit_7.setObjectName("lineEdit_7")
-        self.comboBox = QtWidgets.QComboBox(parent=Dialog)
-        self.comboBox.setGeometry(QtCore.QRect(311, 97, 111, 24))
-        self.comboBox.setObjectName("comboBox")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.lineEdit_2 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_2.setGeometry(QtCore.QRect(320, 160, 111, 24))
-        self.lineEdit_2.setReadOnly(True)
-        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName("pushButton_2")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
-    def envelopes_properties_list(self):
-        self.name = self.lineEdit.text()
-        self.envelope_type = self.comboBox.currentText()
-        self.dt = self.lineEdit_2.text()
-        self.gross_envelope_area = self.lineEdit_7.text()
-        self.fenestration_area = self.lineEdit_3.text()
-        self.envelope_u_factor = self.lineEdit_4.text()
-        self.fenestration_u_factor = self.lineEdit_5.text()
-        self.heat_loss_coefficient = self.lineEdit_6.text()
-        items = []
-
-        items.append(self.name)
-        items.append(self.envelope_type)
-        items.append(self.dt)
-        items.append(self.gross_envelope_area)
-        items.append(self.fenestration_area)
-        items.append(self.envelope_u_factor)
-        items.append(self.fenestration_u_factor)
-        items.append(self.heat_loss_coefficient)
-        return items
-
-    def envelopes_name(self):
-        self.envelopesname = self.lineEdit.text()
-        return self.envelopesname
-
-    def enevelope_area(self):
-        self.gross = float(self.lineEdit_7.text())
-        self.fenestration = float(self.lineEdit_3.text())
-        self.net_envelope = self.gross - self.fenestration
-        return self.net_envelope
-
-    def clear_data(self):
-        self.lineEdit.clear()
-        self.lineEdit_7.clear()
-        self.lineEdit_3.clear()
-        self.lineEdit_4.clear()
-        self.lineEdit_5.clear()
-        self.lineEdit_6.clear()
-
-    def clear_data_dt(self):
-        self.lineEdit_2.clear()
-
-    def reset_envelope_type(self):
-        return self.comboBox.setCurrentIndex(0)
-
-    def check_line(self):
-        self.t1 = self.lineEdit.text()
-        self.t2 = self.lineEdit_2.text()
-        self.t3 = self.lineEdit_7.text()
-        self.t4 = self.lineEdit_3.text()
-        self.t5 = self.lineEdit_4.text()
-        self.t6 = self.lineEdit_5.text()
-        self.t7 = self.lineEdit_6.text()
-        self.t8 = self.lineEdit_8.text()
-
-        if (self.t1 != '' and self.t2 != '' and self.t3 != ''  and self.t4 != '' and self.t5 != '' and self.t6 != ''
-        and self.t7 != '' and self.t8 != ''):
-            return (self.t1, self.t2, self.t3, self.t4, self.t5, self.t6, self.t7, self.t8)
+    def opaque_load_slab(self):
+        self.slab_type = self.comboBox.currentIndex()
+        if self.slab_type == 0:
+            self.hsrf = 0
+        elif self.slab_type == 1:
+            self.hsrf = 0.05
+        elif self.slab_type == 2:
+            self.hsrf = 0.05
+        elif self.slab_type == 3:
+            self.hsrf = 0.6
+        elif self.slab_type == 4:
+            self.hsrf = 1
+        elif self.slab_type == 5:
+            self.hsrf = 1.4
+        elif self.slab_type == 6:
+            self.hsrf = 1.7
+        elif self.slab_type == 7:
+            self.hsrf = 0.8
+        elif self.slab_type == 8:
+            self.hsrf = 1.2
+        elif self.slab_type == 9:
+            self.hsrf = 1.6
+        elif self.slab_type == 10:
+            self.hsrf = 1.9
+        elif self.slab_type == 11:
+            self.hsrf = 0.54
+        elif self.slab_type == 12:
+            self.hsrf = 0.57
+        elif self.slab_type == 13:
+            self.hsrf = 0.68
+        elif self.slab_type == 14:
+            self.hsrf = 0.12
+        elif self.slab_type == 15:
+            self.hsrf = 0.18
+        elif self.slab_type == 16:
+            self.hsrf = 0.62
+        elif self.slab_type == 17:
+            self.hsrf = 1.61
+        elif self.slab_type == 17:
+            self.hsrf = 0.78
         else:
-            return (-1, -1, -1, -1, -1, -1, -1,-1)
+            self.hsrf = 2.09
+        self.hsrf_slab = 1 / (self.hsrf+0.12)
+        opaque_lodesslab = 1.9 - (1.4 * self.hsrf_slab)
+        return opaque_lodesslab
 
-    def check_line_opaque(self):
-        self.t1 = self.lineEdit.text()
-        self.t2 = self.lineEdit_2.text()
-        self.t3 = self.lineEdit_7.text()
-        self.t4 = self.lineEdit_3.text()
-        self.t5 = self.lineEdit_4.text()
-        self.t6 = self.lineEdit_5.text()
-
-        if (self.t1 != '' and self.t2 != '' and self.t3 != '' and self.t4 != '' and self.t5 != '' and self.t6 != ''):
-            return (self.t1, self.t2, self.t3, self.t4, self.t5, self.t6)
-        else:
-            return (-1, -1, -1, -1, -1, -1)
+    def reset_cf_slab(self):
+        self.cfslab_reset = self.comboBox.setCurrentIndex(0)
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Add New Envelope properties"))
-        self.label_2.setText(_translate("Dialog", "Envelope Name :"))
-        self.label.setText(_translate("Dialog", "Envelope Type :"))
-        self.label_5.setText(_translate("Dialog", "Difference of Indoor-outdoor Design Temperature :"))
-        self.label_3.setText(_translate("Dialog", "Gross Envelope Area (m2) :"))
-        self.label_6.setText(_translate("Dialog", "Total Fenestration Area (m2) :"))
-        self.label_9.setText(_translate("Dialog", "total Envelope U factor (W/m2K) * A (m2) :"))
-        self.label_4.setText(_translate("Dialog", "total Fenestration U factor (W/m2K) * A (m2) :"))
-        self.label_10.setText(_translate("Dialog", "Total Heat Loss Coefficient (W/m2K) * A (m2) :"))
-        self.pushButton_9.setText(_translate("Dialog", "Close"))
-        self.pushButton_10.setText(_translate("Dialog", "Save"))
-        self.pushButton_3.setText(_translate("Dialog", "Add"))
-        self.pushButton_5.setText(_translate("Dialog", "Add"))
-        self.pushButton_7.setText(_translate("Dialog", "Add"))
-        self.comboBox.setItemText(0, _translate("Dialog", "Wall"))
-        self.comboBox.setItemText(1, _translate("Dialog", "Floor"))
-        self.comboBox.setItemText(2, _translate("Dialog", "Ceiling"))
+        Dialog.setWindowTitle(_translate("Dialog", "Heat Loss Coefficient of Base"))
+        self.label.setText(_translate("Dialog", "Floor Cover Material :"))
+        self.comboBox.setItemText(0, _translate("Dialog", "Bare concrete, no covering"))
+        self.comboBox.setItemText(1, _translate("Dialog", "Asphalt tile"))
+        self.comboBox.setItemText(2, _translate("Dialog", "Rubber tile"))
+        self.comboBox.setItemText(3, _translate("Dialog", "Light carpet"))
+        self.comboBox.setItemText(4, _translate("Dialog", "Light carpet with rubber pad"))
+        self.comboBox.setItemText(5, _translate("Dialog", "Heavy carpet"))
+        self.comboBox.setItemText(6, _translate("Dialog", "Heavy carpet with rubber pad"))
+        self.comboBox.setItemText(7, _translate("Dialog", "Heavy carpet with light pad"))
+        self.comboBox.setItemText(8, _translate("Dialog", "Heavy carpet with heavy pad"))
+        self.comboBox.setItemText(9, _translate("Dialog", "3/8 in. hardwood"))
+        self.comboBox.setItemText(10, _translate("Dialog", "5/8 in. wood floor (oak)"))
+        self.comboBox.setItemText(11, _translate("Dialog", "1/2 in. oak parquet and pad"))
+        self.comboBox.setItemText(12, _translate("Dialog", "Linoleum"))
+        self.comboBox.setItemText(13, _translate("Dialog", "Marble floor and mudset"))
+        self.comboBox.setItemText(14, _translate("Dialog", "Rubber pad"))
+        self.comboBox.setItemText(15, _translate("Dialog", "Prime urethane underlayment, 3/8 in."))
+        self.comboBox.setItemText(16, _translate("Dialog", "48 oz. waffled sponge rubber"))
+        self.comboBox.setItemText(17, _translate("Dialog", "Bonded urethane, 1/2 in."))
+        self.pushButton.setText(_translate("Dialog", "Close"))
+        self.pushButton_2.setText(_translate("Dialog", "Save"))
 
 
-# if __name__ == "__main__":
-#     import sys
-#     app = QtWidgets.QApplication(sys.argv)
-#     Dialog = QtWidgets.QDialog()
-#     ui = Ui_Dialog()
-#     ui.setupUi(Dialog)
-#     Dialog.show()
-#     sys.exit(app.exec())
+
