@@ -608,8 +608,6 @@ class Ui_Dialog(object):
         self.lineEdit_17.clear()
         self.lineEdit_13.clear()
 
-
-
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Add New Zone"))

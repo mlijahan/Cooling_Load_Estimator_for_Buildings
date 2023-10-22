@@ -39,10 +39,17 @@ import cf_ceiling as ceiling
 import cf_wall as wall
 import cf_floor as floor
 import cf_slab as slab
+import shgc
+import appliance
+import heatgain
+import lights
+import add_lights as adlight
+import add_appliance as addappl
+
 
 
 #Create a database or connect  to one
-conn = sqlite3.connect('heating_load.db')
+conn = sqlite3.connect('cooling_load.db')
 #Create a cursor
 c = conn.cursor()
 
@@ -83,9 +90,8 @@ c.execute(""" CREATE TABLE if not exists envelopes_properties(
     dt real,
     envelope_area_m2 real,
     fenestration_area_m2 real,
-    envelope_u real,
-    fenestration_u real,
-    heat_loss_coefficient real
+    transparent_surface_cooling_load real,
+    opaque_surface_cooling_load real
     )
     """)
 
@@ -99,10 +105,31 @@ c.execute(""" CREATE TABLE if not exists zone_properties(
     ventilation_flow real,
     infiltration_load real,
     ventilation_load real,
-    conductivity_load real,
-    miscellaneous_loud real,
-    distribution_loss real,
+    heat_gain_envelope real,
+    lights_heat real,
+    appliances_heat real,
+    internal_heat real,
     total_heating_load real
+    )
+    """)
+
+c.execute("DROP TABLE IF EXISTS light_properties")
+#Create a table
+c.execute(""" CREATE TABLE if not exists light_properties(
+    light_id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+    light_type text,
+    light_power integer,
+    light_number integer
+    )
+    """)
+
+c.execute("DROP TABLE IF EXISTS appliance_properties")
+#Create a table
+c.execute(""" CREATE TABLE if not exists appliance_properties(
+    appliance_id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+    appliance_type text,
+    appliance_power integer,
+    aooliance_number integer
     )
     """)
 
@@ -620,7 +647,7 @@ class Ui_rfr(object):
     # Grab all the items from the database
     def grab_zone(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
         self.current_id = self.comboBox.currentIndex() + 1
@@ -638,28 +665,31 @@ class Ui_rfr(object):
         record7 = [item[7] for item in records]
         record8 = [item[8] for item in records]
         record9 = [item[9] for item in records]
+        record10 = [item[10] for item in records]
 
         self.zone_name = record1[0]
         self.infiltration_flow = record2[0]
         self.infiltration_load = record3[0]
-        self.conduvtivity_load = record4[0]
-        self.ventilation_flow = record5[0]
-        self.ventilation_load = record6[0]
-        self.miscellaneous_load = record7[0]
-        self.distribution_loss = record8[0]
-        self.total_heating_load = record9[0]
+        self.ventilation_flow = record4[0]
+        self.ventilation_load = record5[0]
+        self.heatgain_envelopes = record6[0]
+        self.lighting_load = record7[0]
+        self.appliances_heating_load = record8[0]
+        self.internal_load = record9[0]
+        self.total_heatgain_load = record10[0]
 
         self.ROW = self.tableWidget.rowCount()
         self.tableWidget.insertRow(self.ROW)
         self.tableWidget.setItem(self.ROW, 0, QTableWidgetItem(str(self.zone_name)))
         self.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.infiltration_flow)))
         self.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.ventilation_flow)))
-        self.tableWidget.setItem(self.ROW, 4, QTableWidgetItem(str(self.conduvtivity_load)))
-        self.tableWidget.setItem(self.ROW, 5, QTableWidgetItem(str(self.infiltration_load)))
-        self.tableWidget.setItem(self.ROW, 6, QTableWidgetItem(str(self.ventilation_load)))
-        self.tableWidget.setItem(self.ROW, 7, QTableWidgetItem(str(self.miscellaneous_load)))
-        self.tableWidget.setItem(self.ROW, 8, QTableWidgetItem(str(self.distribution_loss)))
-        self.tableWidget.setItem(self.ROW, 9, QTableWidgetItem(str(self.total_heating_load)))
+        self.tableWidget.setItem(self.ROW, 4, QTableWidgetItem(str(self.infiltration_load)))
+        self.tableWidget.setItem(self.ROW, 5, QTableWidgetItem(str(self.ventilation_load)))
+        self.tableWidget.setItem(self.ROW, 6, QTableWidgetItem(str(self.heatgain_envelopes)))
+        self.tableWidget.setItem(self.ROW, 7, QTableWidgetItem(str(self.lighting_load)))
+        self.tableWidget.setItem(self.ROW, 8, QTableWidgetItem(str(self.appliances_heating_load)))
+        self.tableWidget.setItem(self.ROW, 9, QTableWidgetItem(str(self.internal_load)))
+        self.tableWidget.setItem(self.ROW, 10, QTableWidgetItem(str(self.total_heatgain_load)))
 
         conn.commit()
 
@@ -667,7 +697,7 @@ class Ui_rfr(object):
 
     def save_database_zones(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
 
@@ -676,10 +706,10 @@ class Ui_rfr(object):
 
         # Add stuf to the table
         c.execute("INSERT INTO zone_properties (zone_name, infiltration_flow,"
-                      "ventilation_flow, infiltration_load, ventilation_load, conductivity_load,miscellaneous_loud,"
-                      "distribution_loss, total_heating_load) VALUES (?,?,?,?,?,?,?,?,?)",
+                      "ventilation_flow, infiltration_load, ventilation_load, heat_gain_envelope,"
+                      "lights_heat, appliances_heat, internal_heat, total_heating_load) VALUES (?,?,?,?,?,?,?,?,?,?)",
 
-                      (items[0], items[1], items[2], items[3], items[4], items[5], items[6], items[7], items[8])
+                      (items[0], items[1], items[2], items[3], items[4], items[5], items[6], items[7], items[8], items[9])
                       )
 
         conn.commit()
@@ -702,7 +732,7 @@ class Ui_rfr(object):
     # Grab all the items from the database
     def grab_envelope(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
         self.current_id = envelope.comboBox_2.currentIndex() + 1
@@ -718,16 +748,16 @@ class Ui_rfr(object):
         record5 = [item[5] for item in records]
         record6 = [item[6] for item in records]
         record7 = [item[7] for item in records]
-        record8 = [item[8] for item in records]
+
 
         self.name = record1[0]
         self.envelope_type = record2[0]
         self.dt = record3[0]
         self.gross_envelope_area = record4[0]
         self.fenestration_area = record5[0]
-        self.envelope_u_factor = record6[0]
-        self.fenestration_u_factor = record7[0]
-        self.heat_loss_coefficient = record8[0]
+        self.transparent_surface_load = record6[0]
+        self.opaque_load = record7[0]
+
 
         self.ROW = envelope.tableWidget.rowCount()
         envelope.tableWidget.insertRow(self.ROW)
@@ -736,9 +766,9 @@ class Ui_rfr(object):
         envelope.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.dt)))
         envelope.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.gross_envelope_area)))
         envelope.tableWidget.setItem(self.ROW, 4, QTableWidgetItem(str(self.fenestration_area)))
-        envelope.tableWidget.setItem(self.ROW, 5, QTableWidgetItem(str(self.envelope_u_factor)))
-        envelope.tableWidget.setItem(self.ROW, 6, QTableWidgetItem(str(self.fenestration_u_factor)))
-        envelope.tableWidget.setItem(self.ROW, 7, QTableWidgetItem(str(self.heat_loss_coefficient)))
+        envelope.tableWidget.setItem(self.ROW, 5, QTableWidgetItem(str(self.transparent_surface_load)))
+        envelope.tableWidget.setItem(self.ROW, 6, QTableWidgetItem(str(self.opaque_load)))
+
 
         conn.commit()
 
@@ -746,7 +776,7 @@ class Ui_rfr(object):
 
     def save_database_envelopes(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
 
@@ -755,10 +785,11 @@ class Ui_rfr(object):
 
         # Add stuff to the table
         c.execute("INSERT INTO envelopes_properties (envelope_name,"
-                      "envelope_type, dt, envelope_area_m2, fenestration_area_m2, envelope_u, fenestration_u,"
-                      "heat_loss_coefficient) VALUES (?,?,?,?,?,?,?,?)",
+                      "envelope_type, dt, envelope_area_m2, fenestration_area_m2, transparent_surface_cooling_load"
+                  ", opaque_surface_cooling_load)"
+                  " VALUES (?,?,?,?,?,?,?)",
 
-                      (items[0], items[1], items[2], items[3], items[4], items[5], items[6], items[7])
+                      (items[0], items[1], items[2], items[3], items[4], items[5], items[6])
                       )
 
         conn.commit()
@@ -781,7 +812,7 @@ class Ui_rfr(object):
     # Grab all the items from the database
     def grab_insullation(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
         self.current_id = add_layers.comboBox.currentIndex() + 1
@@ -819,7 +850,7 @@ class Ui_rfr(object):
 
     def save_database_insulation(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
 
@@ -853,7 +884,7 @@ class Ui_rfr(object):
     # Grab all the items from the database
     def grab_fenestration(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
         self.current_id = fenestrations.comboBox.currentIndex() + 1
@@ -888,7 +919,7 @@ class Ui_rfr(object):
 
     def save_database_fenestration(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('heating_load.db')
+        conn = sqlite3.connect('cooling_load.db')
         # Create a cursor
         c = conn.cursor()
 
@@ -1024,10 +1055,6 @@ class Ui_rfr(object):
     def ventilationload(self):
         self.ventload = new_zone.lineEdit_12.setText(str(self.total_ventilation()))
         return self.ventload
-
-    def miscellaneousload(self):
-        self.miscellaneous_load = new_zone.lineEdit_14.setText(str(envelope.miscellaneous_loads()))
-        return self.miscellaneous_load
 
     def distribution_losses(self):
         self.distribution_loss = new_zone.lineEdit_15.setText(str(building.distribution_load()))
@@ -1307,6 +1334,17 @@ class Ui_rfr(object):
     def show_total_cffactors_slabs(self):
         self.show_cffactor_slab = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_slabs()))
 
+    def total_cooling_surface_loads(self):
+        self.fenestration_u_surface = float(add_envelopes.lineEdit_5.text()) / float(add_envelopes.lineEdit_3.text())
+        self.part2_equ = shgcfactor.shgc_factors() * shgcfactor.pxi_factor() * shgcfactor.ffs_factor()
+        self.part1_equ = self.fenestration_u_surface * (float(add_envelopes.lineEdit_2.text())
+                                                        - (0.46 * shgcfactor.range_colling_temp()))
+        return float(add_envelopes.lineEdit_3.text()) * (self.part1_equ + self.part2_equ)
+
+    def show_total_cooling_surface_loads(self):
+        self.show_surf_cool_load = add_envelopes.lineEdit_8.setText(str(self.total_cooling_surface_loads()))
+        return self.show_surf_cool_load
+
     def exportToExcel(self):
         zone_names = []
         zone_envelopes_properties_list = []
@@ -1388,7 +1426,8 @@ if __name__ == "__main__":
     envelope.setupUi(dialog_envelope)
     new_zone.pushButton_3.clicked.connect(lambda: ui.zone_name())
     new_zone.pushButton_3.clicked.connect(lambda: dialog_envelope.exec())
-    new_zone.pushButton_8.clicked.connect(lambda: ui.miscellaneousload())
+    new_zone.pushButton_8.clicked.connect(lambda: dialog_appliancefactor.exec())
+    new_zone.pushButton_7.clicked.connect(lambda: dialog_heatgainfactor.exec())
     envelope.pushButton_3.clicked.connect(lambda: ui.dt_add_envelopes())
     ##================================================================= Add Infiltration
     infiltration = inf.Ui_Dialog()
@@ -1396,6 +1435,7 @@ if __name__ == "__main__":
     infiltration.setupUi(dialog_infiltration)
     new_zone.pushButton.clicked.connect(lambda: dialog_infiltration.exec())
     new_zone.pushButton_4.clicked.connect(lambda: ui.infiltrationload())
+    new_zone.pushButton_6.clicked.connect(lambda: dialog_lightfactor.exec())
     infiltration.pushButton.clicked.connect(lambda: infiltration.delete_line())
     infiltration.pushButton.clicked.connect(lambda: infiltration.reset_design_temp())
     infiltration.pushButton.clicked.connect(lambda: infiltration.reset_area_height())
@@ -1658,6 +1698,42 @@ if __name__ == "__main__":
     ceiling_cf.setupUi(dialog_slabcf)
     slab_cf.pushButton_2.clicked.connect(lambda: ui.show_total_cffactors_slabs())
     slab_cf.pushButton.clicked.connect(lambda: slab_cf.reset_cf_slab())
+    ##======================================================================SHGC factor calculation
+    shgcfactor = shgc.Ui_Dialog()
+    dialog_shgcfactor = QtWidgets.QDialog()
+    shgcfactor.setupUi(dialog_shgcfactor)
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    ##======================================================================Appliance factor calculation
+    appliance_factor = appliance.Ui_Dialog()
+    dialog_appliancefactor = QtWidgets.QDialog()
+    shgcfactor.setupUi(dialog_appliancefactor)
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    ##======================================================================Add Appliances
+    add_appliances = addappl.Ui_Dialog()
+    dialog_addappliances = QtWidgets.QDialog()
+    shgcfactor.setupUi(dialog_addappliances)
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    ##======================================================================Lights factor calculation
+    light_factor = lights.Ui_Dialog()
+    dialog_lightfactor = QtWidgets.QDialog()
+    shgcfactor.setupUi(dialog_lightfactor)
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    ##======================================================================Add Lights
+    add_lights = addlight.Ui_Dialog()
+    dialog_addlights = QtWidgets.QDialog()
+    shgcfactor.setupUi(dialog_addlights)
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    ##======================================================================heatgain factor calculation
+    heatgain_factor = heatgain.Ui_Dialog()
+    dialog_heatgainfactor = QtWidgets.QDialog()
+    shgcfactor.setupUi(dialog_heatgainfactor)
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
     ###===================================================================================================
 
     sys.exit(app.exec())
