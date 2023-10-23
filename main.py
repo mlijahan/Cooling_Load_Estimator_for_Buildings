@@ -1659,7 +1659,6 @@ if __name__ == "__main__":
     light_factor.pushButton_3.clicked.connect(lambda: dialog_addlights.exec())
     light_factor.pushButton_4.clicked.connect(lambda: ui.grab_lights())
     light_factor.pushButton_2.clicked.connect(lambda: ui.show_light_watts())
-    light_factor.pushButton_2.clicked.connect(lambda: ui.chek_lights(light_factor))
     light_factor.pushButton_6.clicked.connect(lambda: light_factor.delete_row_light())
     light_factor.pushButton_6.clicked.connect(lambda: light_factor.delete_total_totallight())
     light_factor.pushButton.clicked.connect(lambda: ui.show_total_heat_light())
@@ -1668,6 +1667,7 @@ if __name__ == "__main__":
     dialog_addlights = QtWidgets.QDialog()
     add_lights.setupUi(dialog_addlights)
     add_lights.pushButton_2.clicked.connect(lambda: ui.save_database_lights())
+    add_lights.pushButton_2.clicked.connect(lambda: ui.chek_lights(add_lights))
     add_lights.pushButton.clicked.connect(lambda: add_lights.reset_light_factors())
     ##======================================================================heatgain factor calculation
     heatgain_factor = heatgain.Ui_Dialog()
