@@ -9,6 +9,9 @@ class Ui_Dialog(object):
         Dialog.resize(650, 260)
         Dialog.setMinimumSize(QtCore.QSize(650, 260))
         Dialog.setMaximumSize(QtCore.QSize(650, 260))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        Dialog.setWindowIcon(icon)
         self.formLayoutWidget = QtWidgets.QWidget(parent=Dialog)
         self.formLayoutWidget.setGeometry(QtCore.QRect(40, 50, 594, 86))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
@@ -403,7 +406,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Heat Loss Coefficient of Base"))
+        Dialog.setWindowTitle(_translate("Dialog", "Surface cooling factor slab"))
         self.label.setText(_translate("Dialog", "Floor Cover Material :"))
         self.comboBox.setItemText(0, _translate("Dialog", "Bare concrete, no covering"))
         self.comboBox.setItemText(1, _translate("Dialog", "Asphalt tile"))

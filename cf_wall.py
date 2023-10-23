@@ -1,7 +1,7 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-import numpy as np
+
 
 
 class Ui_Dialog(object):
@@ -10,6 +10,9 @@ class Ui_Dialog(object):
         Dialog.resize(750, 260)
         Dialog.setMinimumSize(QtCore.QSize(750, 260))
         Dialog.setMaximumSize(QtCore.QSize(750, 260))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        Dialog.setWindowIcon(icon)
         self.formLayoutWidget = QtWidgets.QWidget(parent=Dialog)
         self.formLayoutWidget.setGeometry(QtCore.QRect(40, 40, 671, 91))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
@@ -439,7 +442,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Heat Loss Coefficient"))
+        Dialog.setWindowTitle(_translate("Dialog", "Surface cooling factor wall"))
         self.label.setText(_translate("Dialog", "Wall type :"))
         self.comboBox.setItemText(0, _translate("Dialog", "Wall adjacent to vented attic"))
         self.comboBox.setItemText(1, _translate("Dialog", "Wall (wood frame) or door with solar exposure"))

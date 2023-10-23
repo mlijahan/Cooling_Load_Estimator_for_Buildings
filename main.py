@@ -6,7 +6,6 @@ import sqlite3
 import numpy as np
 import pandas as pd
 
-import building_property as bdp
 import add_zone as adz
 import envelopes as envp
 import infiltration as inf
@@ -45,7 +44,6 @@ import heatgain
 import lights
 import add_lights as adlight
 import add_appliance as addappl
-
 
 
 #Create a database or connect  to one
@@ -119,7 +117,8 @@ c.execute(""" CREATE TABLE if not exists light_properties(
     light_id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
     light_type text,
     light_power integer,
-    light_number integer
+    light_number integer,
+    light_total real
     )
     """)
 
@@ -129,7 +128,8 @@ c.execute(""" CREATE TABLE if not exists appliance_properties(
     appliance_id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
     appliance_type text,
     appliance_power integer,
-    aooliance_number integer
+    appliance_number integer,
+    watt_total real
     )
     """)
 
@@ -145,42 +145,150 @@ class Ui_rfr(object):
         rfr.setMinimumSize(QtCore.QSize(941, 545))
         rfr.setMaximumSize(QtCore.QSize(941, 545))
         palette = QtGui.QPalette()
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Light, brush)
+        brush = QtGui.QBrush(QtGui.QColor(212, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Midlight, brush)
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Dark, brush)
+        brush = QtGui.QBrush(QtGui.QColor(113, 170, 170))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Mid, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Text, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 0, 127))
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Shadow, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ButtonText, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Shadow, brush)
+        brush = QtGui.QBrush(QtGui.QColor(212, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.AlternateBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ToolTipBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ToolTipText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.PlaceholderText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Light, brush)
+        brush = QtGui.QBrush(QtGui.QColor(212, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Midlight, brush)
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Dark, brush)
+        brush = QtGui.QBrush(QtGui.QColor(113, 170, 170))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Mid, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Text, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 0, 127))
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Shadow, brush)
+        brush = QtGui.QBrush(QtGui.QColor(212, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.AlternateBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ToolTipBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ToolTipText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.PlaceholderText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Light, brush)
+        brush = QtGui.QBrush(QtGui.QColor(212, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Midlight, brush)
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Dark, brush)
+        brush = QtGui.QBrush(QtGui.QColor(113, 170, 170))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Mid, brush)
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Text, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 0, 127))
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 0, 127))
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
         palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Shadow, brush)
+        brush = QtGui.QBrush(QtGui.QColor(170, 255, 255))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.AlternateBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ToolTipBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ToolTipText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(85, 127, 127, 127))
+        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.PlaceholderText, brush)
         rfr.setPalette(palette)
         rfr.setMouseTracking(False)
         icon = QtGui.QIcon()
@@ -197,152 +305,6 @@ class Ui_rfr(object):
         self.line.setObjectName("line")
         self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(660, 440, 151, 41))
-        palette = QtGui.QPalette()
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 127, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Light, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 63, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Midlight, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Dark, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 0, 170))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Mid, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Text, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Shadow, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 127, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.AlternateBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ToolTipBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ToolTipText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 127, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Light, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 63, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Midlight, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Dark, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 0, 170))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Mid, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Text, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Shadow, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 127, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.AlternateBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ToolTipBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ToolTipText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 127, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Light, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 63, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Midlight, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Dark, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 0, 170))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Mid, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Text, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Shadow, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 0, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.AlternateBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ToolTipBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ToolTipText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(127, 0, 127, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        self.pushButton.setPalette(palette)
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(10)
@@ -368,7 +330,7 @@ class Ui_rfr(object):
         self.tableWidget.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.tableWidget.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(10)
+        self.tableWidget.setColumnCount(11)
         self.tableWidget.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -386,202 +348,61 @@ class Ui_rfr(object):
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(90, 129, 255))
+        item.setBackground(QtGui.QColor(255, 170, 255))
         self.tableWidget.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(90, 129, 255))
+        item.setBackground(QtGui.QColor(255, 170, 255))
         self.tableWidget.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(231, 133, 255))
+        item.setBackground(QtGui.QColor(255, 255, 255))
         self.tableWidget.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(231, 133, 255))
+        item.setBackground(QtGui.QColor(255, 255, 255))
         self.tableWidget.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(231, 133, 255))
+        item.setBackground(QtGui.QColor(255, 255, 255))
         self.tableWidget.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(231, 133, 255))
+        item.setBackground(QtGui.QColor(255, 255, 255))
         self.tableWidget.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(231, 133, 255))
+        item.setBackground(QtGui.QColor(255, 255, 255))
         self.tableWidget.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setBold(True)
         item.setFont(font)
-        item.setBackground(QtGui.QColor(255, 85, 255))
         self.tableWidget.setHorizontalHeaderItem(9, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setBold(True)
+        item.setFont(font)
+        item.setBackground(QtGui.QColor(0, 0, 255))
+        self.tableWidget.setHorizontalHeaderItem(10, item)
         self.tableWidget.horizontalHeader().setDefaultSectionSize(165)
         self.tableWidget.horizontalHeader().setSortIndicatorShown(False)
         self.tableWidget.verticalHeader().setDefaultSectionSize(30)
         self.tableWidget.verticalHeader().setMinimumSectionSize(20)
         self.pushButton_8 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_8.setGeometry(QtCore.QRect(490, 440, 161, 41))
-        palette = QtGui.QPalette()
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(234, 212, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Light, brush)
-        brush = QtGui.QBrush(QtGui.QColor(202, 148, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Midlight, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Dark, brush)
-        brush = QtGui.QBrush(QtGui.QColor(113, 57, 170))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Mid, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Text, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.Shadow, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 170, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.AlternateBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ToolTipBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ToolTipText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(234, 212, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Light, brush)
-        brush = QtGui.QBrush(QtGui.QColor(202, 148, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Midlight, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Dark, brush)
-        brush = QtGui.QBrush(QtGui.QColor(113, 57, 170))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Mid, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Text, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.Shadow, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 170, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.AlternateBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ToolTipBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ToolTipText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(234, 212, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Light, brush)
-        brush = QtGui.QBrush(QtGui.QColor(202, 148, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Midlight, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Dark, brush)
-        brush = QtGui.QBrush(QtGui.QColor(113, 57, 170))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Mid, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Text, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.BrightText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.Shadow, brush)
-        brush = QtGui.QBrush(QtGui.QColor(170, 85, 255))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.AlternateBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ToolTipBase, brush)
-        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ToolTipText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(85, 42, 127, 127))
-        brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.PlaceholderText, brush)
-        self.pushButton_8.setPalette(palette)
         font = QtGui.QFont()
         font.setFamily("Segoe UI Black")
         font.setPointSize(10)
@@ -620,11 +441,14 @@ class Ui_rfr(object):
         self.line_3.setFrameShadow(QtWidgets.QFrame.Shadow.Sunken)
         self.line_3.setObjectName("line_3")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(20, 20, 281, 16))
+        self.label.setGeometry(QtCore.QRect(20, 20, 101, 16))
         font = QtGui.QFont()
         font.setBold(True)
         self.label.setFont(font)
         self.label.setObjectName("label")
+        self.lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
+        self.lineEdit.setGeometry(QtCore.QRect(120, 20, 221, 24))
+        self.lineEdit.setObjectName("lineEdit")
         self.lineEdit_2 = QtWidgets.QLineEdit(parent=self.centralwidget)
         self.lineEdit_2.setGeometry(QtCore.QRect(310, 451, 113, 24))
         self.lineEdit_2.setReadOnly(True)
@@ -632,6 +456,19 @@ class Ui_rfr(object):
         self.pushButton_3 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(130, 450, 171, 24))
         self.pushButton_3.setObjectName("pushButton_3")
+        self.line.raise_()
+        self.pushButton.raise_()
+        self.tableWidget.raise_()
+        self.pushButton_8.raise_()
+        self.pushButton_2.raise_()
+        self.pushButton_4.raise_()
+        self.comboBox.raise_()
+        self.label_2.raise_()
+        self.line_3.raise_()
+        self.lineEdit.raise_()
+        self.lineEdit_2.raise_()
+        self.pushButton_3.raise_()
+        self.label.raise_()
         rfr.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=rfr)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 941, 21))
@@ -716,20 +553,6 @@ class Ui_rfr(object):
 
         conn.close()
 
-    # def delet_zone_database(self):# Create a database or connect  to one
-    #     conn = sqlite3.connect('heating_load.db')
-    #     # Create a cursor
-    #     c = conn.cursor()
-    #
-    #     # Delete everything in the database table
-    #     c.execute('DELETE FROM zone_properties')
-    #
-    #     conn.commit()
-    #
-    #     conn.close()
-    #     self.comboBox.clear()
-
-    # Grab all the items from the database
     def grab_envelope(self):
         # Create a database or connect  to one
         conn = sqlite3.connect('cooling_load.db')
@@ -796,20 +619,6 @@ class Ui_rfr(object):
 
         conn.close()
 
-    # def delet_envelopes_database(self):# Create a database or connect  to one
-    #     conn = sqlite3.connect('heating_load.db')
-    #     # Create a cursor
-    #     c = conn.cursor()
-    #
-    #     # Delete everything in the database table
-    #     c.execute('DELETE FROM envelopes_properties')
-    #
-    #     conn.commit()
-    #
-    #     conn.close()
-    #     envelope.comboBox_2.clear()
-
-    # Grab all the items from the database
     def grab_insullation(self):
         # Create a database or connect  to one
         conn = sqlite3.connect('cooling_load.db')
@@ -868,20 +677,6 @@ class Ui_rfr(object):
 
         conn.close()
 
-    # def delet_insulation_database(self):# Create a database or connect  to one
-    #     conn = sqlite3.connect('heating_load.db')
-    #     # Create a cursor
-    #     c = conn.cursor()
-    #
-    #     # Delete everything in the database table
-    #     c.execute('DELETE FROM materialsinsulations_properties')
-    #
-    #     conn.commit()
-    #
-    #     conn.close()
-    #     add_layers.comboBox.clear()
-
-    # Grab all the items from the database
     def grab_fenestration(self):
         # Create a database or connect  to one
         conn = sqlite3.connect('cooling_load.db')
@@ -940,18 +735,122 @@ class Ui_rfr(object):
 
         conn.close()
 
-    # def delet_fenestration_database(self):# Create a database or connect  to one
-    #     conn = sqlite3.connect('heating_load.db')
-    #     # Create a cursor
-    #     c = conn.cursor()
-    #
-    #     # Delete everything in the database table
-    #     c.execute('DELETE FROM fenestration_properties')
-    #
-    #     conn.commit()
-    #
-    #     conn.close()
-    #     fenestrations.comboBox.clear()
+    def grab_lights(self):
+        # Create a database or connect  to one
+        conn = sqlite3.connect('cooling_load.db')
+        # Create a cursor
+        c = conn.cursor()
+        self.current_id = light_factor.comboBox.currentIndex() + 1
+
+        c.execute(" SELECT * FROM light_properties WHERE light_id = ? ", (self.current_id,))
+        records = c.fetchall()
+
+        # Loop through records and add to screen
+        record1 = [item[1] for item in records]
+        record2 = [item[2] for item in records]
+        record3 = [item[3] for item in records]
+        record4 = [item[4] for item in records]
+
+
+        self.light_name = record1[0]
+        self.light_power = record2[0]
+        self.number = record3[0]
+        self.total_loghts = record4[0]
+
+
+        self.ROW = light_factor.tableWidget.rowCount()
+        light_factor.tableWidget.insertRow(self.ROW)
+        light_factor.tableWidget.setItem(self.ROW, 0, QTableWidgetItem(str(self.light_name)))
+        light_factor.tableWidget.setItem(self.ROW, 1, QTableWidgetItem(str(self.light_power)))
+        light_factor.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.number)))
+        light_factor.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.total_loghts)))
+
+
+        conn.commit()
+
+        conn.close()
+
+    def save_database_lights(self):
+        # Create a database or connect  to one
+        conn = sqlite3.connect('cooling_load.db')
+        # Create a cursor
+        c = conn.cursor()
+
+        # Delete everything in the database table
+        # c.execute('DELETE FROM fenestration_properties')
+
+        # Create Blank Dictionary To Hold Fenestration's Properties Items
+        items = add_lights.light_properties_list()
+
+        # Add stuf to the table
+        c.execute("INSERT INTO light_properties (light_type, light_power,"
+                      "light_number, light_total) VALUES (?,?,?,?)",
+
+                      (items[0], items[1], items[2], items[3])
+                      )
+
+        conn.commit()
+
+        conn.close()
+
+        # Grab all the items from the database
+
+    def grab_appliances(self):
+        # Create a database or connect  to one
+        conn = sqlite3.connect('cooling_load.db')
+        # Create a cursor
+        c = conn.cursor()
+        self.current_id = appliance_factor.comboBox.currentIndex() + 1
+
+        c.execute(" SELECT * FROM appliance_properties WHERE appliance_id = ? ", (self.current_id,))
+        records = c.fetchall()
+
+        # Loop through records and add to screen
+        record1 = [item[1] for item in records]
+        record2 = [item[2] for item in records]
+        record3 = [item[3] for item in records]
+        record4 = [item[4] for item in records]
+
+        self.appliance_name = record1[0]
+        self.apliance_power = record2[0]
+        self.numberappliance = record3[0]
+        self.total_wat= record4[0]
+
+        self.ROW = appliance_factor.tableWidget.rowCount()
+        appliance_factor.tableWidget.insertRow(self.ROW)
+        appliance_factor.tableWidget.setItem(self.ROW, 0, QTableWidgetItem(str(self.light_name)))
+        appliance_factor.tableWidget.setItem(self.ROW, 1, QTableWidgetItem(str(self.light_power)))
+        appliance_factor.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.number)))
+        appliance_factor.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.total_loghts)))
+
+        conn.commit()
+
+        conn.close()
+
+    def save_database_appliances(self):
+        #appliance_type text,appliance_power integer,appliance_number integer,watt_total
+        # Create a database or connect  to one
+        conn = sqlite3.connect('cooling_load.db')
+        # Create a cursor
+        c = conn.cursor()
+
+        # Delete everything in the database table
+        # c.execute('DELETE FROM fenestration_properties')
+
+        # Create Blank Dictionary To Hold Fenestration's Properties Items
+        items = add_appliances.appliance_properties_list()
+
+        # Add stuf to the table
+        c.execute("INSERT INTO appliance_properties (appliance_type, appliance_power,"
+                  "appliance_number, watt_total) VALUES (?,?,?,?)",
+
+                  (items[0], items[1], items[2], items[3])
+                  )
+
+        conn.commit()
+
+        conn.close()
+
 
 
     def total_bilding_heatingload(self):
@@ -972,7 +871,7 @@ class Ui_rfr(object):
 
     def retranslateUi(self, rfr):
         _translate = QtCore.QCoreApplication.translate
-        rfr.setWindowTitle(_translate("rfr", "Heating Load"))
+        rfr.setWindowTitle(_translate("rfr", "Cooling Load"))
         self.pushButton.setText(_translate("rfr", "Clear Table"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("rfr", "Zone Name"))
@@ -983,23 +882,25 @@ class Ui_rfr(object):
         item = self.tableWidget.horizontalHeaderItem(3)
         item.setText(_translate("rfr", "Ventilation Flow Rate (L/s)"))
         item = self.tableWidget.horizontalHeaderItem(4)
-        item.setText(_translate("rfr", "Conductive Load (W)"))
-        item = self.tableWidget.horizontalHeaderItem(5)
         item.setText(_translate("rfr", "Infiltration Load (W)"))
-        item = self.tableWidget.horizontalHeaderItem(6)
+        item = self.tableWidget.horizontalHeaderItem(5)
         item.setText(_translate("rfr", "Ventilation Load (W)"))
+        item = self.tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("rfr", "Lights Heat (W)"))
         item = self.tableWidget.horizontalHeaderItem(7)
-        item.setText(_translate("rfr", "Miscellaneous Load (W)"))
+        item.setText(_translate("rfr", "Heat Gain Through Envelopes(W)"))
         item = self.tableWidget.horizontalHeaderItem(8)
-        item.setText(_translate("rfr", "Distribution Losses (W)"))
+        item.setText(_translate("rfr", "Appliances Heat (W)"))
         item = self.tableWidget.horizontalHeaderItem(9)
-        item.setText(_translate("rfr", "Total Heating Load (W)"))
-        self.pushButton_8.setText(_translate("rfr", "Report"))
+        item.setText(_translate("rfr", "Internal Heat Gain (W)"))
+        item = self.tableWidget.horizontalHeaderItem(10)
+        item.setText(_translate("rfr", "Total Cooling Load (W)"))
+        self.pushButton_8.setText(_translate("rfr", "Print Table"))
         self.pushButton_2.setText(_translate("rfr", "Add New Zone"))
         self.pushButton_4.setText(_translate("rfr", "Add to List"))
         self.label_2.setText(_translate("rfr", "Select Zone :"))
-        self.label.setText(_translate("rfr", "Heating Load Estimator for Residential Buildings"))
-        self.pushButton_3.setText(_translate("rfr", "Building Heating Load :"))
+        self.label.setText(_translate("rfr", "Project Name :"))
+        self.pushButton_3.setText(_translate("rfr", "Building Cooling Load :"))
         ### =============================================================== Add from comboBox to the list
         self.pushButton_4.clicked.connect(lambda: self.grab_zone())
         ### ===============================================================  Delete all items from table
@@ -1056,15 +957,11 @@ class Ui_rfr(object):
         self.ventload = new_zone.lineEdit_12.setText(str(self.total_ventilation()))
         return self.ventload
 
-    def distribution_losses(self):
-        self.distribution_loss = new_zone.lineEdit_15.setText(str(building.distribution_load()))
-        return self.distribution_loss
-
     def dt_add_envelopes(self):
         self.dt_value = add_envelopes.lineEdit_2.setText(str(new_zone.delta_design_temperature()))
 
     def show_total_heating_load(self):
-        self.total_heat = new_zone.lineEdit_16.setText(str(new_zone.total_heatingload()))
+        self.total_heat = new_zone.lineEdit_16.setText(str(new_zone.total_coolingload()))
         return self.total_heat
 
     def show_zone_total_heatgain(self):
@@ -1180,16 +1077,17 @@ class Ui_rfr(object):
 
 
     def chek(self, class1_1):
-        t1, t2, t3, t4, t5, t6, t7, t8, t9, t10 = class1_1.check_line()
+        t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18 = class1_1.check_line()
         if (t1 != -1 and t2 != -1 and t3 != -1 and t4 != -1 and t5 != -1 and t6 != -1 and t7 != -1 and t8 != -1
-                and t9 != -1 and t10 != -1):
+                and t9 != -1 and t10 != -1 and t11 != -1 and t12 != -1 and t13 != -1 and t14 != -1
+        and t15 != -1 and t16 != -1 and t17 != -1 and t18 != -1):
             self.comboBox.addItem(str(t1))
         else:
             pass
 
     def chek_envelopes(self, class1_1):
-        t1, t2, t3, t4, t5, t6, t7 = class1_1.check_line()
-        if (t1 != -1 and t2 != -1 and t3 != -1 and t4 != -1 and t5 != -1 and t6 != -1 and t7 != -1):
+        t1, t2, t3, t4, t5, t6, t7, t8 = class1_1.check_line()
+        if (t1 != -1 and t2 != -1 and t3 != -1 and t4 != -1 and t5 != -1 and t6 != -1 and t7 != -1 and t8 != -1):
             envelope.comboBox_2.addItem(str(t1))
         else:
             pass
@@ -1212,6 +1110,20 @@ class Ui_rfr(object):
         t1, t2, t3, t4, t5 = class1_1.check_line()
         if (t1 != -1 and t2 != -1 and t3 != -1 and t4 != -1 and t5 != -1):
             fenestrations.comboBox.addItem(str(t1))
+        else:
+            pass
+
+    def chek_lights(self, class1_1):
+        t1, t2, t3 = class1_1.check_line()
+        if (t1 != -1 and t2 != -1 and t3 != -1):
+            light_factor.comboBox.addItem(str(t1))
+        else:
+            pass
+
+    def chek_appliance(self, class1_1):
+        t1, t2 = class1_1.check_line()
+        if (t1 != -1 and t2 != -1 ):
+            appliance_factor.comboBox.addItem(str(t1))
         else:
             pass
 
@@ -1297,7 +1209,7 @@ class Ui_rfr(object):
 
         self.total_ua_wall = float(add_envelopes.lineEdit_5.text()) + float (add_envelopes.lineEdit_4.text())
         self.total_cf_ua = self.total_value_cf * self.total_ua_wall
-        return self.total_cf_ua
+        return np.round(self.total_cf_ua,2)
 
     def show_total_cffactors_walls(self):
         self.show_cffactor = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_walls()))
@@ -1307,7 +1219,7 @@ class Ui_rfr(object):
         self.total_value_cf_floor = floor_cf.ofr_reducing_temp_effect_floor() + floor_cf.oft_buffering_effect_floor()
         self.total_ua_floor = float(add_envelopes.lineEdit_5.text()) + float(add_envelopes.lineEdit_4.text())
         self.total_cf_ua_floor = self.total_value_cf_floor * self.total_ua_floor
-        return self.total_cf_ua_floor
+        return np.round(self.total_cf_ua_floor, 2)
 
     def show_total_cffactors_floors(self):
         self.show_cffactor_floor = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_floors()))
@@ -1319,7 +1231,7 @@ class Ui_rfr(object):
                                       ceiling_cf.ofb_incident_solargain_ceiling()
         self.total_ua_ceiling = float(add_envelopes.lineEdit_5.text()) + float(add_envelopes.lineEdit_4.text())
         self.total_cf_ua_ceiling = self.total_value_cf_ceiling * self.total_ua_ceiling
-        return self.total_cf_ua_ceiling
+        return np.round(self.total_cf_ua_ceiling, 2)
 
     def show_total_cffactors_ceilings(self):
         self.show_cffactor_ceiling = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_ceilings()))
@@ -1328,11 +1240,12 @@ class Ui_rfr(object):
     def total_cf_factor_slabs(self):
         self.total_value_cf_slab = slab_cf.opaque_load_slab()
         self.total_ua_slab = float(add_envelopes.lineEdit_7.text())
-        self.total_cf_ua_slab = self.total_value_cf_ceiling * self.total_ua_ceiling
+        self.total_cf_ua_slab = self.total_value_cf_slab * self.total_ua_slab
         return self.total_cf_ua_slab
 
     def show_total_cffactors_slabs(self):
         self.show_cffactor_slab = add_envelopes.lineEdit_6.setText(str(self.total_cf_factor_slabs()))
+        return self.show_cffactor_slab
 
     def total_cooling_surface_loads(self):
         self.fenestration_u_surface = float(add_envelopes.lineEdit_5.text()) / float(add_envelopes.lineEdit_3.text())
@@ -1345,6 +1258,26 @@ class Ui_rfr(object):
         self.show_surf_cool_load = add_envelopes.lineEdit_8.setText(str(self.total_cooling_surface_loads()))
         return self.show_surf_cool_load
 
+    def show_total_heat_gain(self):
+        self.show_heatgain = new_zone.lineEdit_15.setText(str(heatgain_factor.heatgain_total_load()))
+        return self.show_heatgain
+
+    def show_light_watts(self):
+        self.show_total_lightwatt = light_factor.lineEdit_2.setText(str(light_factor.total_light()))
+        return self.show_total_lightwatt
+
+    def show_total_heat_light(self):
+        self.showlight = new_zone.lineEdit_17.setText(str(light_factor.total_light()))
+        return self.showlight
+
+    def show_appliance_watts(self):
+        self.show_total_appwatt = appliance_factor.lineEdit_2.setText(str(appliance_factor.total_apps()))
+        return self.show_total_appwatt
+
+    def show_total_heat_app(self):
+        self.showapp = new_zone.lineEdit_14.setText(str(appliance_factor.total_apps()))
+        return self.showapp
+
     def exportToExcel(self):
         zone_names = []
         zone_envelopes_properties_list = []
@@ -1353,9 +1286,11 @@ class Ui_rfr(object):
         conductive_loads = []
         infiltration_loads = []
         ventilation_loads = []
-        miscellaneous_loads = []
-        distribution_losses = []
-        total_heating_loads = []
+        lightheat_loads = []
+        heatenvelope_losses = []
+        heatappliance_loads = []
+        heatinternal_loads = []
+        totalcool_loads = []
         for row in range(self.tableWidget.rowCount()):
             zone_name = self.tableWidget.item(row, 0).text()
             zone_envelopes_properties = self.tableWidget.item(row, 1).text()
@@ -1364,9 +1299,11 @@ class Ui_rfr(object):
             conductive_load = float(self.tableWidget.item(row, 4).text())
             infiltration_load = float(self.tableWidget.item(row, 5).text())
             ventilation_load = float(self.tableWidget.item(row, 6).text())
-            miscellaneous_load = float(self.tableWidget.item(row, 7).text())
-            distribution_loss = float(self.tableWidget.item(row, 7).text())
-            total_heating_load = float(self.tableWidget.item(row, 7).text())
+            light_heat_load = float(self.tableWidget.item(row, 7).text())
+            heat_through_envelopes = float(self.tableWidget.item(row, 8).text())
+            appliance_heat = float(self.tableWidget.item(row, 9).text())
+            internal_heat = float(self.tableWidget.item(row, 10).text())
+            total_cooling_load = float(self.tableWidget.item(row, 11).text())
             zone_names.append(zone_name)
             zone_envelopes_properties_list.append(zone_envelopes_properties)
             infiltration_flows.append(infiltration_flow)
@@ -1374,9 +1311,11 @@ class Ui_rfr(object):
             conductive_loads.append(conductive_load)
             infiltration_loads.append(infiltration_load)
             ventilation_loads.append(ventilation_load)
-            miscellaneous_loads.append(miscellaneous_load)
-            distribution_losses.append(distribution_loss)
-            total_heating_loads.append(total_heating_load)
+            lightheat_loads.append(light_heat_load)
+            heatenvelope_losses.append(heat_through_envelopes)
+            heatappliance_loads.append(appliance_heat)
+            heatinternal_loads.append(internal_heat)
+            totalcool_loads.append(total_cooling_load)
 
 
         data = {'Zone Name': zone_names,
@@ -1386,11 +1325,13 @@ class Ui_rfr(object):
                 'Conductive Load (W)': conductive_loads,
                 'Infiltration Load (W)': infiltration_loads,
                 'Ventilation Load (W)': ventilation_loads,
-                'Miscellaneous Load (W)': miscellaneous_loads,
-                'Distribution Losses (W)': distribution_losses,
-                'Total Heating Load (W)': total_heating_loads}
+                'light gain Load (W)': lightheat_loads,
+                'Heat through envelopes Losses (W)': heatenvelope_losses,
+                'Appliance gain Load (W)': heatappliance_loads,
+                'Internal Load (W)': heatinternal_loads,
+                'Total Cooling Load (W)': totalcool_loads}
         df = pd.DataFrame(data)
-        df.to_excel('Building_Heating_Loads.xlsx', index=False)
+        df.to_excel('Building_Cooling_Loads.xlsx', index=False)
 
 
 if __name__ == "__main__":
@@ -1407,19 +1348,7 @@ if __name__ == "__main__":
     ui.pushButton_2.clicked.connect(lambda: dialog_addzone.exec())
     new_zone.pushButton_10.clicked.connect(lambda: ui.chek(new_zone))
     new_zone.pushButton_10.clicked.connect(lambda: ui.save_database_zones())
-    ###================================================================= Distribution Losses
-    building = bdp.Ui_Dialog()
-    dialog_building = QtWidgets.QDialog()
-    building.setupUi(dialog_building)
-    new_zone.pushButton_7.clicked.connect(lambda: dialog_building.exec())
-    new_zone.pushButton_7.clicked.connect(lambda: ui.distribution_losses())
-    # new_zone.pushButton_9.clicked.connect(lambda: dialog_building.close())
     new_zone.pushButton_9.clicked.connect(lambda: new_zone.clear_lineedits())
-    building.pushButton_9.clicked.connect(lambda: building.reset_number_story())
-    building.pushButton_9.clicked.connect(lambda: building.reset_duct_leakage())
-    building.pushButton_9.clicked.connect(lambda: building.reset_duct_location())
-    building.pushButton_9.clicked.connect(lambda: building.reset_sorround_temp())
-    building.pushButton_9.clicked.connect(lambda: building.reset_duct_r())
     ##================================================================= Add Envelopes Form
     envelope = envp.Ui_Dialog()
     dialog_envelope = QtWidgets.QDialog()
@@ -1506,7 +1435,8 @@ if __name__ == "__main__":
     fenestration_ufactor.pushButton_10.clicked.connect(lambda: ui.fenestration_u_factors())
     fenestration_ufactor.pushButton_10.clicked.connect(lambda: ui.fenestration_installation_u_factors())
     fenestration_ufactor.pushButton_9.clicked.connect(lambda: fenestration_ufactor.reset_fenestration_u_factor_glass())
-    fenestration_ufactor.pushButton_9.clicked.connect(lambda: fenestration_ufactor.reset_fenestration_u_factor_installation())
+    fenestration_ufactor.pushButton_9.clicked.connect(
+        lambda: fenestration_ufactor.reset_fenestration_u_factor_installation())
     ###====================================================== Add Indoor surface heat transfer (kcal/m2hC)
     add_hi = hi.Ui_Dialog()
     dialog_hi = QtWidgets.QDialog()
@@ -1695,45 +1625,56 @@ if __name__ == "__main__":
     ##======================================================================Slab opaque factor calculation
     slab_cf = slab.Ui_Dialog()
     dialog_slabcf = QtWidgets.QDialog()
-    ceiling_cf.setupUi(dialog_slabcf)
+    slab_cf.setupUi(dialog_slabcf)
     slab_cf.pushButton_2.clicked.connect(lambda: ui.show_total_cffactors_slabs())
     slab_cf.pushButton.clicked.connect(lambda: slab_cf.reset_cf_slab())
     ##======================================================================SHGC factor calculation
     shgcfactor = shgc.Ui_Dialog()
     dialog_shgcfactor = QtWidgets.QDialog()
     shgcfactor.setupUi(dialog_shgcfactor)
-    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
+    add_envelopes.pushButton_4.clicked.connect(lambda: dialog_shgcfactor.exec())
+    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_total_cooling_surface_loads())
     shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
     ##======================================================================Appliance factor calculation
     appliance_factor = appliance.Ui_Dialog()
     dialog_appliancefactor = QtWidgets.QDialog()
-    shgcfactor.setupUi(dialog_appliancefactor)
-    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
-    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    appliance_factor.setupUi(dialog_appliancefactor)
+    appliance_factor.pushButton_3.clicked.connect(lambda: dialog_appliancefactor.exec())
+    appliance_factor.pushButton_4.clicked.connect(lambda: ui.grab_appliances())
+    appliance_factor.pushButton_2.clicked.connect(lambda: ui.show_appliance_watts())
+    appliance_factor.pushButton_6.clicked.connect(lambda: appliance_factor.delete_row_app())
+    appliance_factor.pushButton_6.clicked.connect(lambda: appliance_factor.delete_total_totalapp())
+    appliance_factor.pushButton.clicked.connect(lambda: ui.show_total_heat_app())
     ##======================================================================Add Appliances
     add_appliances = addappl.Ui_Dialog()
     dialog_addappliances = QtWidgets.QDialog()
-    shgcfactor.setupUi(dialog_addappliances)
-    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
-    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    add_appliances.setupUi(dialog_addappliances)
+    add_appliances.pushButton_2.clicked.connect(lambda: ui.save_database_appliances())
+    add_appliances.pushButton_2.clicked.connect(lambda: ui.chek_appliance(add_appliances))
+    add_appliances.pushButton.clicked.connect(lambda: add_appliances.reset_appliance_factors())
     ##======================================================================Lights factor calculation
     light_factor = lights.Ui_Dialog()
     dialog_lightfactor = QtWidgets.QDialog()
-    shgcfactor.setupUi(dialog_lightfactor)
-    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
-    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    light_factor.setupUi(dialog_lightfactor)
+    light_factor.pushButton_3.clicked.connect(lambda: dialog_addlights.exec())
+    light_factor.pushButton_4.clicked.connect(lambda: ui.grab_lights())
+    light_factor.pushButton_2.clicked.connect(lambda: ui.show_light_watts())
+    light_factor.pushButton_2.clicked.connect(lambda: ui.chek_lights(light_factor))
+    light_factor.pushButton_6.clicked.connect(lambda: light_factor.delete_row_light())
+    light_factor.pushButton_6.clicked.connect(lambda: light_factor.delete_total_totallight())
+    light_factor.pushButton.clicked.connect(lambda: ui.show_total_heat_light())
     ##======================================================================Add Lights
-    add_lights = addlight.Ui_Dialog()
+    add_lights = adlight.Ui_Dialog()
     dialog_addlights = QtWidgets.QDialog()
-    shgcfactor.setupUi(dialog_addlights)
-    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
-    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    add_lights.setupUi(dialog_addlights)
+    add_lights.pushButton_2.clicked.connect(lambda: ui.save_database_lights())
+    add_lights.pushButton.clicked.connect(lambda: add_lights.reset_light_factors())
     ##======================================================================heatgain factor calculation
     heatgain_factor = heatgain.Ui_Dialog()
     dialog_heatgainfactor = QtWidgets.QDialog()
-    shgcfactor.setupUi(dialog_heatgainfactor)
-    shgcfactor.pushButton_10.clicked.connect(lambda: ui.show_surf_cool_load())
-    shgcfactor.pushButton_9.clicked.connect(lambda: shgcfactor.reset_shgc_factors())
+    heatgain_factor.setupUi(dialog_heatgainfactor)
+    heatgain_factor.pushButton_2.clicked.connect(lambda: ui.show_total_heat_gain())
+    heatgain_factor.pushButton.clicked.connect(lambda: heatgain_factor.reset_heat_gain())
     ###===================================================================================================
 
     sys.exit(app.exec())

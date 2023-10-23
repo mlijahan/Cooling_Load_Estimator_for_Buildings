@@ -548,16 +548,20 @@ class Ui_Dialog(object):
         self.dw = float(self.lineEdit_5.text()) - float(self.lineEdit_6.text())
         return abs(self.dw)
 
-    def total_heatingload(self):
+    def total_coolingload(self):
+        self.zone_name = self.lineEdit_7.text()
+        self.infiltration_flow = self.lineEdit_8.text()
+        self.ventilation_flow = self.lineEdit_9.text()
         self.infiltration_load = self.lineEdit_11.text()
         self.ventilation_load = self.lineEdit_12.text()
-        self.conduvtivity_load = self.lineEdit_10.text()
-        self.miscellaneous_load = self.lineEdit_14.text()
-        self.distribution_loss = self.lineEdit_15.text()
+        self.heatgainenvelop_load = self.lineEdit_10.text()
+        self.lightsheat_load = self.lineEdit_17.text()
+        self.appliencesheat_load = self.lineEdit_14.text()
+        self.internalheat_loss = self.lineEdit_15.text()
         self.totalheatingload = float(self.infiltration_load) + float(self.ventilation_load) + \
-                                 float(self.conduvtivity_load) + float(self.miscellaneous_load) \
-                                 + float(self.distribution_loss)
-        return self.totalheatingload
+                                 float(self.heatgainenvelop_load) + float(self.lightsheat_load) \
+                                 + float(self.appliencesheat_load) + float(self.internalheat_loss)
+        return self.total_coolingload
 
     def zone_properties_list(self):
         self.zone_name = self.lineEdit_7.text()

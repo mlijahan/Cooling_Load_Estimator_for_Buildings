@@ -8,6 +8,9 @@ class Ui_Dialog(object):
         Dialog.resize(800, 650)
         Dialog.setMinimumSize(QtCore.QSize(800, 650))
         Dialog.setMaximumSize(QtCore.QSize(800, 650))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        Dialog.setWindowIcon(icon)
         self.pushButton_9 = QtWidgets.QPushButton(parent=Dialog)
         self.pushButton_9.setGeometry(QtCore.QRect(170, 550, 121, 41))
         palette = QtGui.QPalette()
@@ -1971,7 +1974,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Add Fenestration Area Properties"))
+        Dialog.setWindowTitle(_translate("Dialog", "Solar heat gain coefficient"))
         self.pushButton_9.setText(_translate("Dialog", "Clear"))
         self.pushButton_10.setText(_translate("Dialog", "Save"))
         self.comboBox.setItemText(0, _translate("Dialog", "Uncoated Single Glazing-3 mm-clear"))

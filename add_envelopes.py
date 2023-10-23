@@ -8,6 +8,9 @@ class Ui_Dialog(object):
         Dialog.resize(600, 640)
         Dialog.setMinimumSize(QtCore.QSize(600, 640))
         Dialog.setMaximumSize(QtCore.QSize(600, 640))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        Dialog.setWindowIcon(icon)
         self.verticalLayoutWidget = QtWidgets.QWidget(parent=Dialog)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(19, 10, 320, 521))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
@@ -473,6 +476,7 @@ class Ui_Dialog(object):
         self.lineEdit_4.clear()
         self.lineEdit_5.clear()
         self.lineEdit_6.clear()
+        self.lineEdit_8.clear()
 
     def clear_data_dt(self):
         self.lineEdit_2.clear()
