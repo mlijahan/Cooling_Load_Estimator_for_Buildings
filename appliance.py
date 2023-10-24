@@ -70,7 +70,7 @@ class Ui_Dialog(object):
         self.appswat = []
         self.ROW = self.tableWidget.rowCount()
         for row in range(self.ROW):
-            self.appswat.append(float(self.tableWidget.item(row, 3).text()))
+            self.appswat.append(float(self.tableWidget.item(row, 2).text()))
         self.total_appwat = sum(self.appswat)
         return np.round(self.total_appwat,2)
 

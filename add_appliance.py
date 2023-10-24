@@ -445,11 +445,13 @@ class Ui_Dialog(object):
         self.apptype = self.comboBox.currentText()
         self.numbers = self.lineEdit.text()
         self.pwee_appliance = self.app_watt_load()
+        self.total_appload = int(self.numbers) * float(self.pwee_appliance)
         items = []
 
         items.append(self.apptype)
         items.append(self.numbers)
         items.append(self.pwee_appliance)
+        items.append(self.total_appload)
         return items
 
     def reset_appliance_factors(self):

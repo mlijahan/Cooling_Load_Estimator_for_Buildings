@@ -818,10 +818,10 @@ class Ui_rfr(object):
 
         self.ROW = appliance_factor.tableWidget.rowCount()
         appliance_factor.tableWidget.insertRow(self.ROW)
-        appliance_factor.tableWidget.setItem(self.ROW, 0, QTableWidgetItem(str(self.light_name)))
-        appliance_factor.tableWidget.setItem(self.ROW, 1, QTableWidgetItem(str(self.light_power)))
-        appliance_factor.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.number)))
-        appliance_factor.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.total_loghts)))
+        appliance_factor.tableWidget.setItem(self.ROW, 0, QTableWidgetItem(str(self.appliance_name)))
+        appliance_factor.tableWidget.setItem(self.ROW, 1, QTableWidgetItem(str(self.apliance_power)))
+        appliance_factor.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.numberappliance)))
+        appliance_factor.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.total_wat)))
 
         conn.commit()
 
@@ -1639,7 +1639,7 @@ if __name__ == "__main__":
     appliance_factor = appliance.Ui_Dialog()
     dialog_appliancefactor = QtWidgets.QDialog()
     appliance_factor.setupUi(dialog_appliancefactor)
-    appliance_factor.pushButton_3.clicked.connect(lambda: dialog_appliancefactor.exec())
+    appliance_factor.pushButton_3.clicked.connect(lambda: dialog_addappliances.exec())
     appliance_factor.pushButton_4.clicked.connect(lambda: ui.grab_appliances())
     appliance_factor.pushButton_2.clicked.connect(lambda: ui.show_appliance_watts())
     appliance_factor.pushButton_6.clicked.connect(lambda: appliance_factor.delete_row_app())
