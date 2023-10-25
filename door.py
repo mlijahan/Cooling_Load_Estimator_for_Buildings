@@ -346,12 +346,4 @@ class Ui_Dialog(object):
         self.comboBox.setItemText(3, _translate("Dialog", "Double-Skin Steel Sectional, Tilt-Up, and Aircraft Hangar Doors"))
         self.comboBox.setItemText(4, _translate("Dialog", "Swinging Doors ((Rough Opening = 970 * 2080 mm) glazing more than %50"))
 
-#
-# if __name__ == "__main__":
-#     import sys
-#     app = QtWidgets.QApplication(sys.argv)
-#     Dialog = QtWidgets.QDialog()
-#     ui = Ui_Dialog()
-#     ui.setupUi(Dialog)
-#     Dialog.show()
-#     sys.exit(app.exec())
+
