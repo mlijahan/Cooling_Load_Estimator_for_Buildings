@@ -1404,6 +1404,7 @@ if __name__ == "__main__":
     add_envelopes.pushButton_9.clicked.connect(lambda: add_envelopes.clear_data())
     add_envelopes.pushButton_9.clicked.connect(lambda: add_envelopes.reset_envelope_type())
     add_envelopes_properties.pushButton_9.clicked.connect(lambda: add_envelopes_properties.clear_data())
+    add_envelopes.pushButton_6.clicked.connect(lambda: add_envelopes.clear_data_dt())
     ##================================================================= Fenestration Form
     fenestrations = fnst.Ui_Dialog()
     dialog_fenestrations = QtWidgets.QDialog()
