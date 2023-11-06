@@ -53,14 +53,12 @@ c = conn.cursor()
 
 # Drop the fenestration_properties table if already exists.
 c.execute("DROP TABLE IF EXISTS fenestration_properties")
-#Create a table
+#Create a new table
 c.execute(""" CREATE TABLE if not exists fenestration_properties(
     fenestration_id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
     fenestration_name text,
     fenestration_area_m2 real,
-    installation_area_m2 real,
-    fenestration_u real,
-    installation_u real
+    fenestration_u real
     )
     """)
 
@@ -679,7 +677,7 @@ class Ui_rfr(object):
 
     def grab_fenestration(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('cooling_load.db')
+        conn = sqlite3.connect('heating_load.db')
         # Create a cursor
         c = conn.cursor()
         self.current_id = fenestrations.comboBox.currentIndex() + 1
@@ -691,22 +689,16 @@ class Ui_rfr(object):
         record1 = [item[1] for item in records]
         record2 = [item[2] for item in records]
         record3 = [item[3] for item in records]
-        record4 = [item[4] for item in records]
-        record5 = [item[5] for item in records]
 
         self.fenestration_name = record1[0]
         self.fenestration_area = record2[0]
-        self.installation_area = record3[0]
-        self.fenestration_u_factor = record4[0]
-        self.installation_u_factor = record5[0]
+        self.fenestration_u_factor = record3[0]
 
         self.ROW = fenestrations.tableWidget.rowCount()
         fenestrations.tableWidget.insertRow(self.ROW)
         fenestrations.tableWidget.setItem(self.ROW, 0, QTableWidgetItem(str(self.fenestration_name)))
         fenestrations.tableWidget.setItem(self.ROW, 1, QTableWidgetItem(str(self.fenestration_area)))
         fenestrations.tableWidget.setItem(self.ROW, 2, QTableWidgetItem(str(self.fenestration_u_factor)))
-        fenestrations.tableWidget.setItem(self.ROW, 3, QTableWidgetItem(str(self.installation_area)))
-        fenestrations.tableWidget.setItem(self.ROW, 4, QTableWidgetItem(str(self.installation_u_factor)))
 
         conn.commit()
 
@@ -714,21 +706,18 @@ class Ui_rfr(object):
 
     def save_database_fenestration(self):
         # Create a database or connect  to one
-        conn = sqlite3.connect('cooling_load.db')
+        conn = sqlite3.connect('heating_load.db')
         # Create a cursor
         c = conn.cursor()
-
-        # Delete everything in the database table
-        # c.execute('DELETE FROM fenestration_properties')
 
         # Create Blank Dictionary To Hold Fenestration's Properties Items
         items = fenestration_area.fenestration_properties_list()
 
         # Add stuf to the table
         c.execute("INSERT INTO fenestration_properties (fenestration_name,fenestration_area_m2,"
-                      "installation_area_m2,fenestration_u,installation_u) VALUES (?,?,?,?,?)",
+                      "fenestration_u) VALUES (?,?,?)",
 
-                      (items[0], items[1], items[2], items[3], items[4])
+                      (items[0], items[1], items[2])
                       )
 
         conn.commit()
@@ -1051,14 +1040,9 @@ class Ui_rfr(object):
         self.net_envelope = add_envelopes_properties.lineEdit.setText(str(add_envelopes.enevelope_area()))
         return self.net_envelope
 
-    def fenestration_u_factors(self):
-        self.fenstration_u_fact = fenestration_area.lineEdit_2.setText(str(fenestration_ufactor.u_factor_glazing_func()))
-        return self.fenstration_u_fact
-
     def fenestration_installation_u_factors(self):
         self.installation_u_fact = fenestration_area.lineEdit_5.setText(str(fenestration_ufactor.u_factor_installation_func()))
         return self.installation_u_fact
-
 
     def fenestration_area_u(self):
         self.u_fenestration = fenestrations.lineEdit_2.setText(str(fenestrations.total_u_factor_per_area()))
@@ -1107,8 +1091,8 @@ class Ui_rfr(object):
             pass
 
     def chek_fenestration(self, class1_1):
-        t1, t2, t3, t4, t5 = class1_1.check_line()
-        if (t1 != -1 and t2 != -1 and t3 != -1 and t4 != -1 and t5 != -1):
+        t1, t2, t3 = class1_1.check_line()
+        if (t1 != -1 and t2 != -1 and t3 != -1):
             fenestrations.comboBox.addItem(str(t1))
         else:
             pass
@@ -1159,9 +1143,8 @@ class Ui_rfr(object):
         else:
             dialog_afenestration_ufactor.exec()
 
-
     def door_1_u_factor(self):
-        self.doors_1_u_fact = fenestration_area.lineEdit_2.setText(str(door01.door1_u_factors()))
+        self.doors_1_u_fact = fenestration_area.lineEdit_5.setText(str(door01.door1_u_factors()))
         return self.doors_1_u_fact
 
     def door_1_insu_u_factor(self):
@@ -1169,7 +1152,7 @@ class Ui_rfr(object):
         return self.doors_1_instal_u_fact
 
     def door_2_u_factor(self):
-        self.doors_2_u_fact = fenestration_area.lineEdit_2.setText(str(door02.door2_u_factors()))
+        self.doors_2_u_fact = fenestration_area.lineEdit_5.setText(str(door02.door2_u_factors()))
         return self.doors_2_u_fact
 
     def door_2_ins_u_factor(self):
@@ -1177,7 +1160,7 @@ class Ui_rfr(object):
         return self.doors_2_instal_u_fact
 
     def door_3_u_factor(self):
-        self.doors_3_u_fact = fenestration_area.lineEdit_2.setText(str(door03.door3_u_factors()))
+        self.doors_3_u_fact = fenestration_area.lineEdit_5.setText(str(door03.door3_u_factors()))
         return self.doors_3_u_fact
 
     def door_3_ins_u_factor(self):
@@ -1185,7 +1168,7 @@ class Ui_rfr(object):
         return self.doors_3_instal_u_fact
 
     def door_4_u_factor(self):
-        self.doors_4_u_fact = fenestration_area.lineEdit_2.setText(str(door04.door4_u_factors()))
+        self.doors_4_u_fact = fenestration_area.lineEdit_5.setText(str(door04.door4_u_factors()))
         return self.doors_4_u_fact
 
     def door_4_ins_u_factor(self):
@@ -1249,10 +1232,11 @@ class Ui_rfr(object):
 
     def total_cooling_surface_loads(self):
         self.fenestration_u_surface = float(add_envelopes.lineEdit_5.text()) / float(add_envelopes.lineEdit_3.text())
-        self.part2_equ = shgcfactor.shgc_factors() * shgcfactor.pxi_factor() * shgcfactor.ffs_factor()
+        self.part2_equ = shgcfactor.shgc_factors() * shgcfactor.pxi_factor() * shgcfactor.ffs_factor() *\
+                         shgcfactor.sc_factores()
         self.part1_equ = self.fenestration_u_surface * (float(add_envelopes.lineEdit_2.text())
                                                         - (0.46 * shgcfactor.range_colling_temp()))
-        return float(add_envelopes.lineEdit_3.text()) * (self.part1_equ + self.part2_equ)
+        return np.round ((float(add_envelopes.lineEdit_3.text()) * (self.part1_equ + self.part2_equ)), 2)
 
     def show_total_cooling_surface_loads(self):
         self.show_surf_cool_load = add_envelopes.lineEdit_8.setText(str(self.total_cooling_surface_loads()))
@@ -1370,6 +1354,7 @@ if __name__ == "__main__":
     infiltration.pushButton.clicked.connect(lambda: infiltration.reset_area_height())
     infiltration.pushButton.clicked.connect(lambda: infiltration.reset_construction_type())
     infiltration.pushButton_2.clicked.connect(lambda: ui.infiltration_flow())
+    infiltration.pushButton_2.clicked.connect(lambda: dialog_infiltration.close())
     ##================================================================= Add Ventilation
     ventilation = vn.Ui_Dialog()
     dialog_ventilation = QtWidgets.QDialog()
@@ -1378,6 +1363,7 @@ if __name__ == "__main__":
     new_zone.pushButton_5.clicked.connect(lambda: ui.ventilationload())
     ventilation.pushButton.clicked.connect(lambda: ventilation.delete_line())
     ventilation.pushButton_2.clicked.connect(lambda: ui.ventilation_flow())
+    ventilation.pushButton_2.clicked.connect(lambda: dialog_ventilation.close())
     new_zone.pushButton_11.clicked.connect(lambda: ui.show_total_heating_load())
     ###================================================================= Add New Envelope
     add_envelopes = adenvp.Ui_Dialog()
@@ -1433,17 +1419,15 @@ if __name__ == "__main__":
     dialog_afenestration_ufactor = QtWidgets.QDialog()
     fenestration_ufactor.setupUi(dialog_afenestration_ufactor)
     fenestration_area.pushButton_5.clicked.connect(lambda: dialog_windowdoors.exec())
-    fenestration_ufactor.pushButton_10.clicked.connect(lambda: ui.fenestration_u_factors())
     fenestration_ufactor.pushButton_10.clicked.connect(lambda: ui.fenestration_installation_u_factors())
-    fenestration_ufactor.pushButton_9.clicked.connect(lambda: fenestration_ufactor.reset_fenestration_u_factor_glass())
-    fenestration_ufactor.pushButton_9.clicked.connect(
-        lambda: fenestration_ufactor.reset_fenestration_u_factor_installation())
+    fenestration_ufactor.pushButton_9.clicked.connect(lambda: fenestration_ufactor.reset_fenestration_u_factor_installation())
     ###====================================================== Add Indoor surface heat transfer (kcal/m2hC)
     add_hi = hi.Ui_Dialog()
     dialog_hi = QtWidgets.QDialog()
     add_hi.setupUi(dialog_hi)
     add_envelopes_properties.pushButton_4.clicked.connect(lambda: dialog_hi.exec())
     add_hi.pushButton_2.clicked.connect(lambda: ui.indoor())
+    add_hi.pushButton_2.clicked.connect(lambda: dialog_hi.close())
     add_hi.pushButton.clicked.connect(lambda: add_hi.reset_position_surface())
     add_hi.pushButton.clicked.connect(lambda: add_hi.reset_surface_emittance())
     ##========================================================== Add Outdoor surface heat transfer (kcal/m2hC)
@@ -1452,6 +1436,7 @@ if __name__ == "__main__":
     add_ho.setupUi(dialog_ho)
     add_envelopes_properties.pushButton_5.clicked.connect(lambda: dialog_ho.exec())
     add_ho.pushButton_2.clicked.connect(lambda: ui.outdoor())
+    add_ho.pushButton_2.clicked.connect(lambda: dialog_ho.close())
     add_ho.pushButton.clicked.connect(lambda: add_ho.reset_season())
     ###========================================================== Thermal Resistance Plane of Air Space (m2k/W)
     add_air = air.Ui_Dialog()
@@ -1459,6 +1444,7 @@ if __name__ == "__main__":
     add_air.setupUi(dialog_air)
     add_envelopes_properties.pushButton_7.clicked.connect(lambda: dialog_air.exec())
     add_air.pushButton_2.clicked.connect(lambda: ui.air_resistance())
+    add_air.pushButton_2.clicked.connect(lambda: dialog_air.close())
     add_air.pushButton.clicked.connect(lambda: add_air.reset_air_space_temp())
     add_air.pushButton.clicked.connect(lambda: add_air.reset_air_apace_thickness())
     add_air.pushButton.clicked.connect(lambda: add_air.reset_effective_emittance())

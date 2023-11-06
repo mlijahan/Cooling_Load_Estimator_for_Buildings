@@ -8,11 +8,8 @@ class Ui_Dialog(object):
         Dialog.resize(800, 650)
         Dialog.setMinimumSize(QtCore.QSize(800, 650))
         Dialog.setMaximumSize(QtCore.QSize(800, 650))
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("srcs/oven_6301569.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        Dialog.setWindowIcon(icon)
         self.pushButton_9 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_9.setGeometry(QtCore.QRect(170, 550, 121, 41))
+        self.pushButton_9.setGeometry(QtCore.QRect(170, 570, 121, 41))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
@@ -166,7 +163,7 @@ class Ui_Dialog(object):
         self.pushButton_9.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.pushButton_9.setObjectName("pushButton_9")
         self.pushButton_10 = QtWidgets.QPushButton(parent=Dialog)
-        self.pushButton_10.setGeometry(QtCore.QRect(520, 550, 121, 41))
+        self.pushButton_10.setGeometry(QtCore.QRect(520, 570, 121, 41))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
@@ -320,7 +317,7 @@ class Ui_Dialog(object):
         self.pushButton_10.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.pushButton_10.setObjectName("pushButton_10")
         self.comboBox = QtWidgets.QComboBox(parent=Dialog)
-        self.comboBox.setGeometry(QtCore.QRect(120, 52, 661, 24))
+        self.comboBox.setGeometry(QtCore.QRect(120, 49, 661, 24))
         self.comboBox.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
@@ -417,7 +414,7 @@ class Ui_Dialog(object):
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.comboBox_4 = QtWidgets.QComboBox(parent=Dialog)
-        self.comboBox_4.setGeometry(QtCore.QRect(150, 386, 291, 24))
+        self.comboBox_4.setGeometry(QtCore.QRect(150, 423, 291, 24))
         self.comboBox_4.setObjectName("comboBox_4")
         self.comboBox_4.addItem("")
         self.comboBox_4.addItem("")
@@ -425,11 +422,8 @@ class Ui_Dialog(object):
         self.comboBox_4.addItem("")
         self.comboBox_4.addItem("")
         self.comboBox_4.addItem("")
-        self.comboBox_4.addItem("")
-        self.comboBox_4.addItem("")
-        self.comboBox_4.addItem("")
         self.comboBox_5 = QtWidgets.QComboBox(parent=Dialog)
-        self.comboBox_5.setGeometry(QtCore.QRect(140, 427, 91, 24))
+        self.comboBox_5.setGeometry(QtCore.QRect(140, 466, 91, 24))
         self.comboBox_5.setObjectName("comboBox_5")
         self.comboBox_5.addItem("")
         self.comboBox_5.addItem("")
@@ -441,30 +435,94 @@ class Ui_Dialog(object):
         self.comboBox_5.addItem("")
         self.comboBox_5.addItem("")
         self.label_4 = QtWidgets.QLabel(parent=Dialog)
-        self.label_4.setGeometry(QtCore.QRect(20, 384, 112, 24))
+        self.label_4.setGeometry(QtCore.QRect(20, 423, 112, 24))
         font = QtGui.QFont()
         font.setBold(True)
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
         self.label_7 = QtWidgets.QLabel(parent=Dialog)
-        self.label_7.setGeometry(QtCore.QRect(20, 427, 106, 24))
+        self.label_7.setGeometry(QtCore.QRect(20, 465, 106, 24))
         font = QtGui.QFont()
         font.setBold(True)
         self.label_7.setFont(font)
         self.label_7.setObjectName("label_7")
         self.label_10 = QtWidgets.QLabel(parent=Dialog)
-        self.label_10.setGeometry(QtCore.QRect(20, 470, 137, 24))
+        self.label_10.setGeometry(QtCore.QRect(20, 509, 137, 24))
         font = QtGui.QFont()
         font.setBold(True)
         self.label_10.setFont(font)
         self.label_10.setObjectName("label_10")
         self.lineEdit_4 = QtWidgets.QLineEdit(parent=Dialog)
-        self.lineEdit_4.setGeometry(QtCore.QRect(180, 470, 113, 24))
+        self.lineEdit_4.setGeometry(QtCore.QRect(180, 509, 113, 24))
         self.lineEdit_4.setObjectName("lineEdit_4")
         self.comboBox_7 = QtWidgets.QComboBox(parent=Dialog)
-        self.comboBox_7.setGeometry(QtCore.QRect(110, 338, 151, 24))
+        self.comboBox_7.setGeometry(QtCore.QRect(110, 338, 541, 24))
         self.comboBox_7.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.comboBox_7.setObjectName("comboBox_7")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
+        self.comboBox_7.addItem("")
         self.comboBox_7.addItem("")
         self.comboBox_7.addItem("")
         self.label_11 = QtWidgets.QLabel(parent=Dialog)
@@ -525,6 +583,15 @@ class Ui_Dialog(object):
         font.setBold(True)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
+        self.label_12 = QtWidgets.QLabel(parent=Dialog)
+        self.label_12.setGeometry(QtCore.QRect(20, 380, 141, 24))
+        font = QtGui.QFont()
+        font.setBold(True)
+        self.label_12.setFont(font)
+        self.label_12.setObjectName("label_12")
+        self.lineEdit_5 = QtWidgets.QLineEdit(parent=Dialog)
+        self.lineEdit_5.setGeometry(QtCore.QRect(160, 380, 113, 24))
+        self.lineEdit_5.setObjectName("lineEdit_5")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -1955,6 +2022,11206 @@ class Ui_Dialog(object):
         self.coolingrange = self.lineEdit_4.text()
         return float(self.coolingrange)
 
+    def sc_factores(self):
+        self.glazed_type = self.comboBox.currentIndex()
+        self.shaded_types = self.comboBox_7.currentIndex()
+        self.shadow_line = self.lineEdit_5.text()
+        if self.glazed_type == 0:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.7
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.45
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.44
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.34
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.3
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.23
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.88
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 1:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.46
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.45
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.35
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.32
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.25
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.88
+            else:
+                self.sc_fc = 1
+        if self.glazed_type == 2:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.53
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.40
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.50
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.49
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.40
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.38
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.31
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.89
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 3:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.45
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.39
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.9
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 4:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.53
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.51
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.51
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.42
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.39
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.33
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.89
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 5:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.06
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.48
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.7
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.46
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.4
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.9
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 6:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.8
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.8
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.63
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.51
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.51
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.42
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.39
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.33
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.89
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 7:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.06
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.49
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.7
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.41
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.9
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 8:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 46:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.45
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.39
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.9
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 15:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.84
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.63
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.43
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.20
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.48
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.43
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.37
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.92
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 16:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.84
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.44
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.5
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.33
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.33
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.22
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.42
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 17:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.84
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.44
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.40
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.27
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.51
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.46
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.41
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 18:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.7
+                self.sc_60 = 0.7
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.44
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.30
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.54
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.49
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 19:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.41
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.42
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 20:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.50
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 21:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.5
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.41
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.42
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 22:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.7
+                self.sc_60 = 0.7
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.51
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.4
+                self.sc_60 = 0.4
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.5
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 23:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.44
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.30
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.54
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.49
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.93
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 30:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.4
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.9
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.46
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.41
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 31:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.63
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.62
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.43
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.41
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.30
+                self.sc_60 = 0.27
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 32:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.31
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.31
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.17
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.47
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 33:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.84
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.22
+                self.sc_60 = 0.18
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.53
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 34:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.33
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.27
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.20
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.54
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.49
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 35:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.31
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.27
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 36:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.21
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.5
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 37:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.20
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.7
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 38:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.21
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.5
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 39:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.20
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.7
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 40:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.31
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.27
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 42:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.53
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.30
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.50
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.44
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 43:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.84
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.7
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.50
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 44:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.4
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.4
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.22
+                self.sc_60 = 0.17
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.51
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 45:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.4
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.4
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.27
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.30
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.23
+                self.sc_60 = 0.18
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.56
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 46:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.62
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.21
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.54
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 47:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 48:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.62
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.22
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.54
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 49:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 50:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.62
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.34
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.22
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.54
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 51:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 52:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.96
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 54:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.52
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.50
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.36
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.3
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.18
+                self.sc_60 = 0.30
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.60
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.53
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 55:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.61
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.53
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.42
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.21
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.3
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.18
+                self.sc_60 = 0.3
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 56:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.65
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.7
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.59
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.94
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 58:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.26
+                self.sc_60 = 0.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.05
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.09
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.94
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 59:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.85
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.7069
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.73
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.63
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.69
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.68
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.2
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.15
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.17
+                self.sc_60 = 0.28
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.94
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.74
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.70
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.66
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 61:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.78
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.36
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.45
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.22
+                self.sc_60 = 0.19
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.48
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.94
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 62:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.70
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.62
+                self.sc_60 = 0.64
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.43
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.31
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.49
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.23
+                self.sc_60 = 0.21
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.03
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.76
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.8
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.55
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 64:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.88
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.85
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.75
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.71
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.61
+                self.sc_60 = 0.63
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.52
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.62
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.51
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.44
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.57
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.27
+                self.sc_60 = 0.24
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.01
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.10
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.81
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.53
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 65:
+            if self.shaded_types == 1:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.89
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.98
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.87
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.79
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.74
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.75
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.67
+                self.sc_60 = 0.68
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.63
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.63
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.64
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.53
+                self.sc_60 = 0.58
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.59
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.40
+                self.sc_60 = 0.41
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.39
+                self.sc_60 = 0.56
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.38
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.29
+                self.sc_60 = 0.26
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.04
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.08
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.16
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.83
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 66:
+            if self.shaded_types == 1:
+                self.sc_0 = 1
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 1
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.91
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.81
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.82
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.76
+                self.sc_60 = 0.76
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.69
+                self.sc_60 = 0.81
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.70
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.62
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.97
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.30
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.45
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.25
+                self.sc_60 = 0.27
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.31
+                self.sc_60 = 0.47
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.30
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.21
+                self.sc_60 = 0.18
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.15
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.69
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.95
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.80
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.62
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.57
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.52
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 67:
+            if self.shaded_types == 1:
+                self.sc_0 = 1
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 1
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 1
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 1
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.79
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.73
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.66
+                self.sc_60 = 0.67
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.42
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.34
+                self.sc_60 = 0.40
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.07
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.97
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.47
+                self.sc_60 = 0.35
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.27
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.32
+                self.sc_60 = 0.48
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.32
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.22
+                self.sc_60 = 0.20
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.90
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.10
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.15
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.94
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.79
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.95
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.71
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.63
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.59
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.95
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 68:
+            if self.shaded_types == 1:
+                self.sc_0 = 1
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 1
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.96
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.92
+                self.sc_60 = 0.93
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.99
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.91
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.88
+                self.sc_60 = 0.84
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.78
+                self.sc_60 = 0.80
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.72
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.80
+                self.sc_60 = 0.74
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.65
+                self.sc_60 = 0.66
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.01
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.53
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.48
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.58
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.46
+                self.sc_60 = 0.53
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.41
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.55
+                self.sc_60 = 0.44
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.35
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.98
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.98
+                self.sc_60 = 0.54
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.11
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.15
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.13
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.93
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.84
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.73
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.94
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.78
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.96
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.88
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.86
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.7
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.67
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.61
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.58
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        elif self.glazed_type == 69:
+            if self.shaded_types == 1:
+                self.sc_0 = 1
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60)*(min((1.2 * float(self.shadow_line)), 60))/60)
+            elif self.shaded_types == 2:
+                self.sc_0 = 1
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 3:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.97
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 4:
+                self.sc_0 = 0.96
+                self.sc_60 = 0.95
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 5:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.94
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 6:
+                self.sc_0 = 1
+                self.sc_60 = 1
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 7:
+                self.sc_0 = 1
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 8:
+                self.sc_0 = 0.86
+                self.sc_60 = 0.92
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 9:
+                self.sc_0 = 0.90
+                self.sc_60 = 0.87
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 10:
+                self.sc_0 = 0.82
+                self.sc_60 = 0.83
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 11:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 12:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 13:
+                self.sc_0 = 0.77
+                self.sc_60 = 0.86
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 14:
+                self.sc_0 = 0.83
+                self.sc_60 = 0.77
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 15:
+                self.sc_0 = 0.71
+                self.sc_60 = 0.72
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 16:
+                self.sc_0 = 0.99
+                self.sc_60 = 1.05
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 17:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 18:
+                self.sc_0 = 0.50
+                self.sc_60 = 0.60
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 19:
+                self.sc_0 = 0.60
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 20:
+                self.sc_0 = 0.49
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 21:
+                self.sc_0 = 0.99
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 22:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 23:
+                self.sc_0 = 0.43
+                self.sc_60 = 0.57
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 24:
+                self.sc_0 = 0.56
+                self.sc_60 = 0.46
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 25:
+                self.sc_0 = 0.37
+                self.sc_60 = 0.39
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 26:
+                self.sc_0 = 0.99
+                self.sc_60 = 1.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 27:
+                self.sc_0 = 0.99
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 28:
+                self.sc_0 = 0.38
+                self.sc_60 = 0.55
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 29:
+                self.sc_0 = 0.54
+                self.sc_60 = 0.37
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 30:
+                self.sc_0 = 0.28
+                self.sc_60 = 0.25
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 31:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.89
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 32:
+                self.sc_0 = 0.93
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 33:
+                self.sc_0 = 0.02
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 34:
+                self.sc_0 = 0.19
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 35:
+                self.sc_0 = 0.01
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 36:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.99
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 37:
+                self.sc_0 = 0.94
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 38:
+                self.sc_0 = 0.07
+                self.sc_60 = 0.14
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 39:
+                self.sc_0 = 0.24
+                self.sc_60 = 0.06
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 40:
+                self.sc_0 = 0.03
+                self.sc_60 = 0.02
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 41:
+                self.sc_0 = 0.95
+                self.sc_60 = 1.09
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 42:
+                self.sc_0 = 0.95
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 43:
+                self.sc_0 = 0.15
+                self.sc_60 = 0.29
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 44:
+                self.sc_0 = 0.33
+                self.sc_60 = 0.12
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 45:
+                self.sc_0 = 0.08
+                self.sc_60 = 0.04
+                self.sc_fc = self.sc_0 + ((self.sc_0 - self.sc_60) * (min((1.2 * float(self.shadow_line)), 60)) / 60)
+            elif self.shaded_types == 47:
+                self.sc_fc = 0.94
+            elif self.shaded_types == 48:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 49:
+                self.sc_fc = 0.77
+            elif self.shaded_types == 50:
+                self.sc_fc = 0.95
+            elif self.shaded_types == 51:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 52:
+                self.sc_fc = 0.82
+            elif self.shaded_types == 53:
+                self.sc_fc = 0.96
+            elif self.shaded_types == 54:
+                self.sc_fc = 0.90
+            elif self.shaded_types == 55:
+                self.sc_fc = 0.85
+            elif self.shaded_types == 56:
+                self.sc_fc = 0.89
+            elif self.shaded_types == 57:
+                self.sc_fc = 0.75
+            elif self.shaded_types == 58:
+                self.sc_fc = 0.72
+            elif self.shaded_types == 59:
+                self.sc_fc = 0.91
+            elif self.shaded_types == 60:
+                self.sc_fc = 0.87
+            elif self.shaded_types == 61:
+                self.sc_fc = 0.92
+            elif self.shaded_types == 62:
+                self.sc_fc = 0.68
+            elif self.shaded_types == 63:
+                self.sc_fc = 0.65
+            elif self.shaded_types == 64:
+                self.sc_fc = 0.64
+            elif self.shaded_types == 65:
+                self.sc_fc = 0.96
+            else:
+                self.sc_fc = 1
+        else:
+            self.sc_fc = 1
+
+        return self.sc_fc
+
     def reset_shgc_factors(self):
         self.comboBox.setCurrentIndex(0)
         self.comboBox_2.setCurrentIndex(0)
@@ -1967,14 +13234,14 @@ class Ui_Dialog(object):
         self.lineEdit_2.clear()
         self.lineEdit_3.clear()
         self.lineEdit_4.clear()
+        self.lineEdit_5.clear()
 
     def reset_shgc_installation_factor(self):
         self.comboBox_2.setCurrentIndex(0)
 
-
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Solar heat gain coefficient"))
+        Dialog.setWindowTitle(_translate("Dialog", "Add Fenestration Area Properties"))
         self.pushButton_9.setText(_translate("Dialog", "Clear"))
         self.pushButton_10.setText(_translate("Dialog", "Save"))
         self.comboBox.setItemText(0, _translate("Dialog", "Uncoated Single Glazing-3 mm-clear"))
@@ -2057,14 +13324,11 @@ class Ui_Dialog(object):
         self.label.setText(_translate("Dialog", "Glazing Type :"))
         self.label_2.setText(_translate("Dialog", "Installation Type :"))
         self.comboBox_4.setItemText(0, _translate("Dialog", "North"))
-        self.comboBox_4.setItemText(1, _translate("Dialog", "Northeast"))
-        self.comboBox_4.setItemText(2, _translate("Dialog", "East"))
-        self.comboBox_4.setItemText(3, _translate("Dialog", "Southeast"))
+        self.comboBox_4.setItemText(1, _translate("Dialog", "Northeast/Northwest"))
+        self.comboBox_4.setItemText(2, _translate("Dialog", "East/West"))
+        self.comboBox_4.setItemText(3, _translate("Dialog", "Southeast/Southwest"))
         self.comboBox_4.setItemText(4, _translate("Dialog", "South"))
-        self.comboBox_4.setItemText(5, _translate("Dialog", "SouthWest"))
-        self.comboBox_4.setItemText(6, _translate("Dialog", "West"))
-        self.comboBox_4.setItemText(7, _translate("Dialog", "NorthWest"))
-        self.comboBox_4.setItemText(8, _translate("Dialog", "Horizontal"))
+        self.comboBox_4.setItemText(5, _translate("Dialog", "Horizontal"))
         self.comboBox_5.setItemText(0, _translate("Dialog", "20"))
         self.comboBox_5.setItemText(1, _translate("Dialog", "25"))
         self.comboBox_5.setItemText(2, _translate("Dialog", "30"))
@@ -2078,7 +13342,71 @@ class Ui_Dialog(object):
         self.label_7.setText(_translate("Dialog", "Exposure latitude :"))
         self.label_10.setText(_translate("Dialog", "Cooling daily range (K) :"))
         self.comboBox_7.setItemText(0, _translate("Dialog", "No Shaded"))
-        self.comboBox_7.setItemText(1, _translate("Dialog", "Shaded"))
+        self.comboBox_7.setItemText(1, _translate("Dialog", "Louvered-Indoor side-reflection 0.15-slat angle worst"))
+        self.comboBox_7.setItemText(2, _translate("Dialog", "Louvered-Indoor side-reflection 0.15-slat angle 0"))
+        self.comboBox_7.setItemText(3, _translate("Dialog", "Louvered-Indoor side-reflection 0.15-slat angle negative"))
+        self.comboBox_7.setItemText(4, _translate("Dialog", "Louvered-Indoor side-reflection 0.15-slat angle 45"))
+        self.comboBox_7.setItemText(5, _translate("Dialog", "Louvered-Indoor side-reflection .015-slat angle closed"))
+        self.comboBox_7.setItemText(6, _translate("Dialog", "Louvered-Indoor side-reflection 0.5-slat angle worst"))
+        self.comboBox_7.setItemText(7, _translate("Dialog", "Louvered-Indoor side-reflection 0.5-slat angle 0"))
+        self.comboBox_7.setItemText(8, _translate("Dialog", "Louvered-Indoor side-reflection 0.5-slat angle negative"))
+        self.comboBox_7.setItemText(9, _translate("Dialog", "Louvered-Indoor side-reflection 0.5-slat angle 45"))
+        self.comboBox_7.setItemText(10, _translate("Dialog", "Louvered-Indoor side-reflection 0.5-slat angle closed"))
+        self.comboBox_7.setItemText(11, _translate("Dialog", "Louvered-Indoor side-reflection 0.8-slat angle worst"))
+        self.comboBox_7.setItemText(12, _translate("Dialog", "Louvered-Indoor side-reflection 0.8-slat angle 0"))
+        self.comboBox_7.setItemText(13, _translate("Dialog", "Louvered-Indoor side-reflection 0.8-slat angle negative"))
+        self.comboBox_7.setItemText(14, _translate("Dialog", "Louvered-Indoor side-reflection 0.8-slat angle 45"))
+        self.comboBox_7.setItemText(15, _translate("Dialog", "Louvered-Indoor side-reflection 0.8-slat angle closed"))
+        self.comboBox_7.setItemText(16, _translate("Dialog", "Louvered-Between Glazing-reflection 0.15-slat angle worst"))
+        self.comboBox_7.setItemText(17, _translate("Dialog", "Louvered-Between Glazing-reflection 0.15-slat angle 0"))
+        self.comboBox_7.setItemText(18, _translate("Dialog", "Louvered-Between Glazing-reflection 0.15-slat angle negative"))
+        self.comboBox_7.setItemText(19, _translate("Dialog", "Louvered-Between Glazing-reflection 0.15-slat angle 45"))
+        self.comboBox_7.setItemText(20, _translate("Dialog", "Louvered-Between Glazing-reflection .015-slat angle closed"))
+        self.comboBox_7.setItemText(21, _translate("Dialog", "Louvered-Between Glazing-reflection 0.5-slat angle worst"))
+        self.comboBox_7.setItemText(22, _translate("Dialog", "Louvered-Between Glazing-reflection 0.5-slat angle 0"))
+        self.comboBox_7.setItemText(23, _translate("Dialog", "Louvered-Between Glazing-reflection 0.5-slat angle negative"))
+        self.comboBox_7.setItemText(24, _translate("Dialog", "Louvered-Between Glazing-reflection 0.5-slat angle 45"))
+        self.comboBox_7.setItemText(25, _translate("Dialog", "Louvered-Between Glazing-reflection 0.5-slat angle closed"))
+        self.comboBox_7.setItemText(26, _translate("Dialog", "Louvered-Between Glazing-reflection 0.8-slat angle worst"))
+        self.comboBox_7.setItemText(27, _translate("Dialog", "Louvered-Between Glazing-reflection 0.8-slat angle 0"))
+        self.comboBox_7.setItemText(28, _translate("Dialog", "Louvered-Between Glazing-reflection 0.8-slat angle negative"))
+        self.comboBox_7.setItemText(29, _translate("Dialog", "Louvered-Between Glazing-reflection 0.8-slat angle 45"))
+        self.comboBox_7.setItemText(30, _translate("Dialog", "Louvered-Between Glazing-reflection 0.8-slat angle closed"))
+        self.comboBox_7.setItemText(31, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.15-slat angle worst"))
+        self.comboBox_7.setItemText(32, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.15-slat angle 0"))
+        self.comboBox_7.setItemText(33, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.15-slat angle negative"))
+        self.comboBox_7.setItemText(34, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.15-slat angle 45"))
+        self.comboBox_7.setItemText(35, _translate("Dialog", "Louvered-Outdoor Side-reflection .015-slat angle closed"))
+        self.comboBox_7.setItemText(36, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.5-slat angle worst"))
+        self.comboBox_7.setItemText(37, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.5-slat angle 0"))
+        self.comboBox_7.setItemText(38, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.5-slat angle negative"))
+        self.comboBox_7.setItemText(39, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.5-slat angle 45"))
+        self.comboBox_7.setItemText(40, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.5-slat angle closed"))
+        self.comboBox_7.setItemText(41, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.8-slat angle worst"))
+        self.comboBox_7.setItemText(42, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.8-slat angle 0"))
+        self.comboBox_7.setItemText(43, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.8-slat angle negative"))
+        self.comboBox_7.setItemText(44, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.8-slat angle 45"))
+        self.comboBox_7.setItemText(45, _translate("Dialog", "Louvered-Outdoor Side-reflection 0.8-slat angle closed"))
+        self.comboBox_7.setItemText(46, _translate("Dialog", "Louvered-Sheer"))
+        self.comboBox_7.setItemText(47, _translate("Dialog", "Drapery-Dark Closed Weave-Fabric Designator III"))
+        self.comboBox_7.setItemText(48, _translate("Dialog", "Drapery-Medium Closed Weave-Fabric Designator III"))
+        self.comboBox_7.setItemText(49, _translate("Dialog", "Drapery-Light Closed Weave-Fabric Designator III"))
+        self.comboBox_7.setItemText(50, _translate("Dialog", "Drapery-Dark Closed Weave-Fabric Designator II"))
+        self.comboBox_7.setItemText(51, _translate("Dialog", "Drapery-Medium Closed Weave-Fabric Designator II"))
+        self.comboBox_7.setItemText(52, _translate("Dialog", "Drapery-Light Closed Weave-Fabric Designator II"))
+        self.comboBox_7.setItemText(53, _translate("Dialog", "Drapery-Dark Closed Weave-Fabric Designator I"))
+        self.comboBox_7.setItemText(54, _translate("Dialog", "Drapery-Medium Closed Weave-Fabric Designator I"))
+        self.comboBox_7.setItemText(55, _translate("Dialog", "Drapery-Light Closed Weave-Fabric Designator I"))
+        self.comboBox_7.setItemText(56, _translate("Dialog", "Drapery-Sheer"))
+        self.comboBox_7.setItemText(57, _translate("Dialog", "Roller-Light Translucent-Openness 0.14"))
+        self.comboBox_7.setItemText(58, _translate("Dialog", "Roller Screen-White Opaque-Openness 0"))
+        self.comboBox_7.setItemText(59, _translate("Dialog", "Roller Screen-Dark Opaque-Openness 0"))
+        self.comboBox_7.setItemText(60, _translate("Dialog", "Roller Screen-Light Gray Translucent-Openness 0.1"))
+        self.comboBox_7.setItemText(61, _translate("Dialog", "Roller Screen-Dark Gray Translucent-Openness 0.14"))
+        self.comboBox_7.setItemText(62, _translate("Dialog", "Roller Screen-Reflective White Opaque-Openness 0"))
+        self.comboBox_7.setItemText(63, _translate("Dialog", "Roller Screen-Reflective White Translucent-Openness 0.07"))
+        self.comboBox_7.setItemText(64, _translate("Dialog", "Outdoor Insect Screen"))
+        self.comboBox_7.setItemText(65, _translate("Dialog", "Indoor Insect Screen"))
         self.label_11.setText(_translate("Dialog", "Shade Type :"))
         self.comboBox_6.setItemText(0, _translate("Dialog", "Single Family Detached"))
         self.comboBox_6.setItemText(1, _translate("Dialog", "Multifamily"))
@@ -2090,13 +13418,6 @@ class Ui_Dialog(object):
         self.comboBox_3.setItemText(1, _translate("Dialog", "Exterior insect screen"))
         self.comboBox_3.setItemText(2, _translate("Dialog", "Shade screen"))
         self.label_3.setText(_translate("Dialog", "Exterior attachment of fenestration :"))
+        self.label_12.setText(_translate("Dialog", "Shading Profile Angle :"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
-    sys.exit(app.exec())
