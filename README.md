@@ -10,7 +10,8 @@ In addition, this app is operational in the estimation of the effect of fenestra
 
 
 # Installation
-You can readily run the main.py file with a Python compiler. If you need the main.exe file please send an Email malihehjahanbakhsh.eng@gmail.com
+You can readily download source codes and the main.exe file and Source code(zip) folder from the below link: https://github.com/mlijahan/Cooling_Load_Estimator_for_Buildings/releases/tag/V0.1.0
+then, extract the zip folder and copy cooling_load.db and srcs folder into the same directory as main.exe file; Now you can run main.exe file.
 
 # Instructor
 [Video Instruction] 
