@@ -877,7 +877,7 @@ class Ui_rfr(object):
         item = self.tableWidget.horizontalHeaderItem(6)
         item.setText(_translate("rfr", "Lights Heat (W)"))
         item = self.tableWidget.horizontalHeaderItem(7)
-        item.setText(_translate("rfr", "Heat Gain Through Envelopes(W)"))
+        item.setText(_translate("rfr", "Heat Gain Envelopes(W)"))
         item = self.tableWidget.horizontalHeaderItem(8)
         item.setText(_translate("rfr", "Appliances Heat (W)"))
         item = self.tableWidget.horizontalHeaderItem(9)
